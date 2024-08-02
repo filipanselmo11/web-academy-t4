@@ -1,1 +1,2 @@
-Olá eu sou o novo arquivo de texto
+Olá eu sou o novo arquivo de texto.
+Estou sendo editado na branch que foi criada
