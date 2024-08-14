@@ -1,0 +1,27 @@
+* {
+    margin: 0;
+}
+
+body {
+    margin-top: 215px;
+    padding: 20px;
+    background-image: url('https://revistapesquisa.fapesp.br/wp-content/uploads/2022/12/RPF-nebulosa-james-webb-site-2022-12-00-1140.jpg');
+}
+
+.texto-imagem {
+    color: white;
+    border-style: solid;
+    border-color: orange;
+    border-radius: 10px;
+    width: 300px;
+}
+
+.texto-imagem h4 {
+    padding: 20px;
+    font-size: 30px;
+}
+
+.texto-imagem p {
+    padding: 17px;
+    font-size: 21px;
+}
