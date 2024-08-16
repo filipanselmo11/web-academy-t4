@@ -73,7 +73,11 @@
     color: #fff;
   }
 
-  @media (max-width: 1920px) {
+  @media screen and (max-width: 1920px) {
+
+    * {
+      margin-top: 1px;
+    }
 
     nav, nav ul, nav ul li {
       border: none;
