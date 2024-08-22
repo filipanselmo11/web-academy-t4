@@ -8,6 +8,8 @@ const opcoes = ['Pedra', 'Papel', 'Tesoura'];
 
 let opcaoJogador;
 let opcaoMaquina;
+let pontuacaoJogador = 0;
+let pontuacaoMaquina = 0;
 
 const lerEntradas = () => {
     opcaoJogador = parseInt(prompt());
@@ -26,22 +28,31 @@ const execucao = () => {
             lerEntradas();
         } else if (opcaoJogador !== opcaoMaquina) {
             if (opcaoJogador === 1 && opcaoMaquina === 2) {
+                pontuacaoMaquina = pontuacaoMaquina + 1;
                 console.log('Máquina ganhou');
             } else if (opcaoJogador === 2 && opcaoMaquina === 1) {
                 console.log('Jogador ganhou');
+                pontuacaoJogador = pontuacaoJogador + 1;
             } else if (opcaoJogador === 1 && opcaoMaquina === 3) {
                 console.log('Jogador ganhou');
+                pontuacaoJogador = pontuacaoJogador + 1;
             } else if (opcaoJogador === 3 && opcaoMaquina === 1) {
                 console.log('Máquina ganhou');
+                pontuacaoMaquina = pontuacaoMaquina + 1;
             } else if (opcaoJogador === 2 && opcaoMaquina === 3) {
                 console.log('Máquina ganhou');
+                pontuacaoMaquina = pontuacaoMaquina + 1;
             } else if (opcaoJogador === 3 && opcaoMaquina === 2) {
+                pontuacaoJogador = pontuacaoJogador + 1;
                 console.log('Jogador ganhou');
             }
         }
 
         console.log('Fim da rodada ', index);
     }
+    console.log('Fim de jogo');
+    console.log('Pontuação do Jogador: ', pontuacaoJogador);
+    console.log('Pontuação da Máquina: ', pontuacaoMaquina);
 }
 
 execucao();
