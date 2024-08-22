@@ -31,17 +31,17 @@ const execucao = () => {
                 pontuacaoMaquina = pontuacaoMaquina + 1;
                 console.log('Máquina ganhou');
             } else if (opcaoJogador === 2 && opcaoMaquina === 1) {
-                console.log('Jogador ganhou');
                 pontuacaoJogador = pontuacaoJogador + 1;
+                console.log('Jogador ganhou');
             } else if (opcaoJogador === 1 && opcaoMaquina === 3) {
-                console.log('Jogador ganhou');
                 pontuacaoJogador = pontuacaoJogador + 1;
+                console.log('Jogador ganhou');
             } else if (opcaoJogador === 3 && opcaoMaquina === 1) {
-                console.log('Máquina ganhou');
                 pontuacaoMaquina = pontuacaoMaquina + 1;
+                console.log('Máquina ganhou');
             } else if (opcaoJogador === 2 && opcaoMaquina === 3) {
-                console.log('Máquina ganhou');
                 pontuacaoMaquina = pontuacaoMaquina + 1;
+                console.log('Máquina ganhou');
             } else if (opcaoJogador === 3 && opcaoMaquina === 2) {
                 pontuacaoJogador = pontuacaoJogador + 1;
                 console.log('Jogador ganhou');
