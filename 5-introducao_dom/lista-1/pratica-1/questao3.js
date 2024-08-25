@@ -1,1 +1,0 @@
-console.log('Salve questão 3');

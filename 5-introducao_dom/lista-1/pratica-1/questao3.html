@@ -39,7 +39,19 @@
         <li id="three" class="hot">item c</li>
         <li id="four">item d</li>
     </ul>
-    <script src="./questao3.js"></script>
+    <script>
+        console.log('Imprima no console todos os itens da lista-itens-2');
+        const listaItens2 = document.getElementsByClassName('lista-itens-2')[0].getElementsByTagName('li');
+        for (let indice = 0; indice < listaItens2.length; indice++) {
+            console.log(listaItens2.item(indice));
+        }
+        console.log('Imprima no console somente os itens da lista-itens-2 que possuam a classe hot');
+        const listaItensHot2 = document.getElementsByClassName('lista-itens-2')[0].getElementsByClassName('hot');
+        for (let index = 0; index < listaItensHot2.length; index++) {
+            console.log(listaItensHot2.item(index));
+        }
+
+    </script>
 </body>
 
 </html>
