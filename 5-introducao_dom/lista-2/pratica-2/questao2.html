@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Várias listas</h1>
+
+    <div>
+        <p id="lista-titulo" name="lista">Lista de itens:</p>
+    </div>
+
+    <ul id="lista-itens-1">
+        <li id="one" class="hot">item a</li>
+        <li id="two" class="hot">item b</li>
+        <li id="three" class="hot">item c</li>
+        <li id="four">item d</li>
+    </ul>
+    <script>
+        //Utilize a propriedade nodeValue para alterar o texto do p com id `lista-titulo` para `Nova lista de Itens`
+        const paragrafo = document.getElementById('lista-titulo');
+        paragrafo.firstChild.nodeValue = "Nova Lista de Itens:";
+        //Selecione o segundo item da lista com id "two" e utilize a propriedade textContent para alterar o texto para "Item B Atualizado".
+        const itemTwo = document.getElementById('two');
+        itemTwo.textContent = "Item B Atualizado";
+    </script>
+</body>
+
+</html>

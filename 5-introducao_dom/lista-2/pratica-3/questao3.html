@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-Br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Várias listas</h1>
+  
+    <div>
+      <p id="lista-titulo" name="lista">Lista de itens:</p>
+    </div>
+  
+    <ul id="lista-itens-1">
+      <li id="one" class="hot">item a</li>
+      <li id="two" class="hot">item b</li>
+      <li id="three" class="hot">item c</li>
+      <li id="four">item d</li>
+    </ul>
+  </body>
+  <script>
+    //Adicione um novo elemento item <li> na lista <ul> com id="lista-itens-1"
+    let text = document.createTextNode('Novo Item. Olá eu sou o item e');
+    let novoLi = document.createElement('li');
+    novoLi.appendChild(text);
+    let posicao = document.getElementsByTagName('ul')[0]; 
+    posicao.appendChild(novoLi);
+  </script>
+</html>
