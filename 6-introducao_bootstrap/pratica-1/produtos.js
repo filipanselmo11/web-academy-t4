@@ -23,28 +23,27 @@ document.addEventListener('DOMContentLoaded', () => {
             let newTableItem = document.createElement('tr');
             newTableItem.classList.add('align-middle');
 
-            let cellId = document.createElement('td');
+            let cellId = document.createElement('th');
+            cellId.scope = 'row';
             cellId.textContent = nextID++;
-            cellId.classList.add('fw-bold');
             newTableItem.appendChild(cellId);
 
             inputs.forEach(input => {
-                let prodContent = document.createTextNode(input.value);
                 let newCell = document.createElement('td');
-                newCell.appendChild(prodContent);
+                newCell.textContent = input.value;
                 newTableItem.appendChild(newCell);
             });
 
             let cellActions = document.createElement('td');
             cellActions.innerHTML = `
-                <button class="btn btn-secondary mr-3" type="button">Editar</button>
+                <button class="btn btn-secondary me-3" type="button">Editar</button>
                 <button class="btn btn-secondary" type="button">Excluir</button>
             `;
 
 
             newTableItem.appendChild(cellActions);
 
-            tableElement.appendChild(newTableItem);
+            tableElement.querySelector('tbody').appendChild(newTableItem);
             novoProdForm.reset();
             modal.hide();
         }
