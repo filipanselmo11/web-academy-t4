@@ -1,5 +1,10 @@
 const http = require("http");
 const fs = require("fs");
+const dotenv = require("dotenv");
+
+dotenv.config();
+
+const PORT = process.env.PORT;
 
 const server = http.createServer((req, res) => {
     res.writeHead(200, {
@@ -13,4 +18,6 @@ const server = http.createServer((req, res) => {
     });
 });
 
-server.listen(3333);
+server.listen(PORT, () => {
+    console.log(`Servidor rodando na porta: ${PORT}`);
+});
