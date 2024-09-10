@@ -13,6 +13,7 @@ const server = http.createServer((req, res) => {
     fs.readdir('./public', (error, dados) => {
         dados.forEach(item => {
             res.write(item + '<br/>');
+            console.log('Olá');
         });
         res.end();
     });
