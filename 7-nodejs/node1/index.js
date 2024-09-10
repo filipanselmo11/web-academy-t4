@@ -2,7 +2,9 @@ const http = require("http");
 const fs = require("fs");
 const dotenv = require("dotenv");
 
-dotenv.config();
+dotenv.config({
+    path: `.env.${process.env.NODE_ENV}`
+});
 
 const PORT = process.env.PORT;
 
@@ -13,7 +15,6 @@ const server = http.createServer((req, res) => {
     fs.readdir('./public', (error, dados) => {
         dados.forEach(item => {
             res.write(item + '<br/>');
-            console.log('Olá');
         });
         res.end();
     });

@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon index.js",
-    "start:prod": "node index.js"
+    "start": "NODE_ENV=devlopment nodemon index.js",
+    "start:prod": "NODE_ENV=production node index.js"
   },
   "keywords": [],
   "author": "",
