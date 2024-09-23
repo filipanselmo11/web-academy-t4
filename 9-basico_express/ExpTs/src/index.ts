@@ -1,7 +1,9 @@
 import express from 'express';
-import { config as dotenvConfig } from 'dotenv';
+import validateEnv from './utils/validateEnv';
+import dotenv from 'dotenv';
 
-dotenvConfig()
+dotenv.config();
+validateEnv();
 
 const app = express();
 const PORT = process.env.PORT ?? 4455;
