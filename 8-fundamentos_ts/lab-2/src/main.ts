@@ -80,11 +80,9 @@ class Turma {
     };
 
     editarAluno(id: number, alunoEditado: Aluno): void {
-        let alunoEncontrado;
         this.alunos.forEach((aluno, indice) => {
             if (aluno.getId() === id) {
                 this.alunos[indice] = alunoEditado;
-                alunoEncontrado = true;
             }
         });
 
