@@ -227,11 +227,3 @@ removerItem.addEventListener('click', () => {
 });
 
 const carrinho = new Carrinho();
-
-// const tv = new Tv('LG 0LED', '4k', '55', 'LG', 5000);
-// const celular = new Celular('Iphone 13', 128, 'Apple', 7000);
-// const bicicleta = new Bicicleta('Caloi', 29, 'Caloi', 1500);
-
-// carrinho.adicionarProd(tv);
-// carrinho.adicionarProd(celular);
-// carrinho.adicionarProd(bicicleta);
