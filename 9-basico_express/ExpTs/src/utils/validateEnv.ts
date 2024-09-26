@@ -7,6 +7,4 @@ const validateEnv = () => {
     });
 };
 
-validateEnv();
-
 export default validateEnv;
