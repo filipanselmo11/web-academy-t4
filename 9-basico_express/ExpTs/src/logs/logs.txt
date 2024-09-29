@@ -1,0 +1,3 @@
+Log completo: 2024-09-29T17:49:29.237Z, /info, GET, 1.1, Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36
+Log completo: 2024-09-29T17:49:54.298Z, /sobre, GET, 1.1, Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36
+Log Simples: Sun Sep 29 2024 13:49:54 GMT-0400 (Amazon Standard Time), /sobre, GET
