@@ -2,6 +2,7 @@ import express from 'express';
 import validateEnv from './utils/validateEnv';
 import dotenv from 'dotenv';
 import logger from './middlewares/logger';
+import router from './routers';
 
 dotenv.config();
 validateEnv();
@@ -15,12 +16,12 @@ app.get('/', (req, res) => {
 });
 
 app.use(logger('complete'));
+app.use(logger('simple'));
+app.use(router);
 
 app.get('/info', (req, res) => {
     res.send('Página de Informações');
 });
-
-app.use(logger('simple'));
 
 app.get('/sobre', (req, res) => {
     res.send('Page sobre');
