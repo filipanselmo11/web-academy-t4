@@ -4,14 +4,16 @@ import dotenv from 'dotenv';
 import logger from './middlewares/logger';
 import router from './routers';
 import { engine } from 'express-handlebars';
-
 dotenv.config();
 validateEnv();
 
 const app = express();
 const PORT = process.env.PORT ?? 4455;
 
-app.engine('handlebars', engine());
+(async () => {
+    const helpers = await import(`${__dirname}/views/helpers/helpers.ts`);
+    app.engine('handlebars', engine({ helpers: helpers }));
+})();
 app.set('view engine', 'handlebars');
 app.set('views', `${__dirname}/views`);
 
