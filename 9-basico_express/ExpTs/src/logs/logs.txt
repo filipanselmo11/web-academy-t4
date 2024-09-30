@@ -55,3 +55,15 @@ Log completo: 2024-09-29T23:40:17.877Z, /hb4, GET, 1.1, Mozilla/5.0 (Windows NT 
 Log Simples: Sun Sep 29 2024 19:40:17 GMT-0400 (Amazon Standard Time), /hb4, GET
 Log completo: 2024-09-29T23:43:26.011Z, /hb4, GET, 1.1, Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36
 Log Simples: Sun Sep 29 2024 19:43:26 GMT-0400 (Amazon Standard Time), /hb4, GET
+Log completo: 2024-09-30T02:12:03.668Z, /, GET, 1.1, Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36
+Log Simples: Sun Sep 29 2024 22:12:03 GMT-0400 (Amazon Standard Time), /, GET
+Log completo: 2024-09-30T02:12:03.800Z, /favicon.ico, GET, 1.1, Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36
+Log Simples: Sun Sep 29 2024 22:12:03 GMT-0400 (Amazon Standard Time), /favicon.ico, GET
+Log completo: 2024-09-30T02:12:07.326Z, /hb1, GET, 1.1, Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36
+Log Simples: Sun Sep 29 2024 22:12:07 GMT-0400 (Amazon Standard Time), /hb1, GET
+Log completo: 2024-09-30T02:12:09.891Z, /hb2, GET, 1.1, Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36
+Log Simples: Sun Sep 29 2024 22:12:09 GMT-0400 (Amazon Standard Time), /hb2, GET
+Log completo: 2024-09-30T02:12:12.328Z, /hb3, GET, 1.1, Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36
+Log Simples: Sun Sep 29 2024 22:12:12 GMT-0400 (Amazon Standard Time), /hb3, GET
+Log completo: 2024-09-30T02:12:14.828Z, /hb4, GET, 1.1, Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36
+Log Simples: Sun Sep 29 2024 22:12:14 GMT-0400 (Amazon Standard Time), /hb4, GET

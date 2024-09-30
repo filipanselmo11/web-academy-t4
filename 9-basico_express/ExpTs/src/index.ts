@@ -17,21 +17,9 @@ const PORT = process.env.PORT ?? 4455;
 app.set('view engine', 'handlebars');
 app.set('views', `${__dirname}/views`);
 
-app.get('/', (req, res) => {
-    res.send('Hello World');
-});
-
 app.use(logger('complete'));
 app.use(logger('simple'));
 app.use(router);
-
-app.get('/info', (req, res) => {
-    res.send('Página de Informações');
-});
-
-app.get('/sobre', (req, res) => {
-    res.send('Page sobre');
-});
 
 app.listen(PORT, () => {
     console.log(`App running at port: ${PORT}`);
