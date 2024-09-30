@@ -36,7 +36,6 @@ const lorem = (req: Request, res: Response) => {
 const hb1 = (req: Request, res: Response) => {
     res.render('hb1', {
         msg: 'Olá você está aprendendo Express + HBS!',
-        layout: false,
     });
 };
 
@@ -45,7 +44,6 @@ const hb2 = (req: Request, res: Response) => {
         poweredByNodeJs: true,
         name: 'Express',
         type: 'Framework',
-        layout: false,
     });
 };
 
@@ -57,7 +55,7 @@ const hb3 = (req: Request, res: Response) => {
         { nome: 'Elaine Harada', sala: 1231 },
     ];
 
-    res.render('hb3', { profes, layout: false });
+    res.render('hb3', { profes });
 };
 
 const hb4 = (req: Request, res: Response) => {
@@ -72,8 +70,7 @@ const hb4 = (req: Request, res: Response) => {
 
     ];
     res.render('hb4', {
-        layout: false,
-        techs,
+        techs
     });
 };
 
