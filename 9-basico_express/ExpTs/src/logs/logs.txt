@@ -187,3 +187,59 @@ Log completo: 2024-09-30T02:50:45.696Z, /hb1, GET, 1.1, Mozilla/5.0 (Windows NT 
 Log Simples: Sun Sep 29 2024 22:50:45 GMT-0400 (Amazon Standard Time), /hb1, GET
 Log completo: 2024-09-30T02:50:50.840Z, /hb3, GET, 1.1, Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36
 Log Simples: Sun Sep 29 2024 22:50:50 GMT-0400 (Amazon Standard Time), /hb3, GET
+Log completo: 2024-09-30T13:59:02.961Z, /, GET, 1.1, Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36
+Log Simples: Mon Sep 30 2024 09:59:02 GMT-0400 (Amazon Standard Time), /, GET
+Log completo: 2024-09-30T13:59:03.170Z, /favicon.ico, GET, 1.1, Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36
+Log Simples: Mon Sep 30 2024 09:59:03 GMT-0400 (Amazon Standard Time), /favicon.ico, GET
+Log completo: 2024-09-30T13:59:06.403Z, /hb1, GET, 1.1, Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36
+Log Simples: Mon Sep 30 2024 09:59:06 GMT-0400 (Amazon Standard Time), /hb1, GET
+Log Simples: Mon Sep 30 2024 09:59:06 GMT-0400 (Amazon Standard Time), /css/styles.css, GET
+Log completo: 2024-09-30T13:59:06.515Z, /css/styles.css, GET, 1.1, Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36
+Log completo: 2024-09-30T13:59:44.167Z, /hb2, GET, 1.1, Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36
+Log Simples: Mon Sep 30 2024 09:59:44 GMT-0400 (Amazon Standard Time), /hb2, GET
+Log completo: 2024-09-30T13:59:44.252Z, /css/styles.css, GET, 1.1, Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36
+Log Simples: Mon Sep 30 2024 09:59:44 GMT-0400 (Amazon Standard Time), /css/styles.css, GET
+Log completo: 2024-09-30T13:59:47.896Z, /hb3, GET, 1.1, Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36
+Log Simples: Mon Sep 30 2024 09:59:47 GMT-0400 (Amazon Standard Time), /hb3, GET
+Log completo: 2024-09-30T13:59:47.922Z, /css/styles.css, GET, 1.1, Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36
+Log Simples: Mon Sep 30 2024 09:59:47 GMT-0400 (Amazon Standard Time), /css/styles.css, GET
+Log completo: 2024-09-30T13:59:52.649Z, /hb4, GET, 1.1, Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36
+Log Simples: Mon Sep 30 2024 09:59:52 GMT-0400 (Amazon Standard Time), /hb4, GET
+Log completo: 2024-09-30T13:59:52.671Z, /css/styles.css, GET, 1.1, Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36
+Log Simples: Mon Sep 30 2024 09:59:52 GMT-0400 (Amazon Standard Time), /css/styles.css, GET
+Log completo: 2024-09-30T13:59:59.602Z, /css/styles.css, GET, 1.1, Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36
+Log Simples: Mon Sep 30 2024 09:59:59 GMT-0400 (Amazon Standard Time), /css/styles.css, GET
+Log completo: 2024-09-30T14:08:08.809Z, /hb4, GET, 1.1, Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36
+Log Simples: Mon Sep 30 2024 10:08:08 GMT-0400 (Amazon Standard Time), /hb4, GET
+Log completo: 2024-09-30T14:08:08.851Z, /css/styles.css, GET, 1.1, Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36
+Log Simples: Mon Sep 30 2024 10:08:08 GMT-0400 (Amazon Standard Time), /css/styles.css, GET
+Log completo: 2024-09-30T14:08:23.668Z, /hb4, GET, 1.1, Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36
+Log Simples: Mon Sep 30 2024 10:08:23 GMT-0400 (Amazon Standard Time), /hb4, GET
+Log Simples: Mon Sep 30 2024 10:08:23 GMT-0400 (Amazon Standard Time), /css/styles.css, GET
+Log completo: 2024-09-30T14:08:23.699Z, /css/styles.css, GET, 1.1, Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36
+Log completo: 2024-09-30T14:08:55.036Z, /hb4, GET, 1.1, Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36
+Log Simples: Mon Sep 30 2024 10:08:55 GMT-0400 (Amazon Standard Time), /hb4, GET
+Log completo: 2024-09-30T14:08:55.063Z, /css/styles.css, GET, 1.1, Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36
+Log Simples: Mon Sep 30 2024 10:08:55 GMT-0400 (Amazon Standard Time), /css/styles.css, GET
+Log completo: 2024-09-30T14:09:08.927Z, /hb3, GET, 1.1, Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36
+Log Simples: Mon Sep 30 2024 10:09:08 GMT-0400 (Amazon Standard Time), /hb3, GET
+Log completo: 2024-09-30T14:09:08.953Z, /css/styles.css, GET, 1.1, Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36
+Log Simples: Mon Sep 30 2024 10:09:08 GMT-0400 (Amazon Standard Time), /css/styles.css, GET
+Log completo: 2024-09-30T14:09:14.681Z, /hb1, GET, 1.1, Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36
+Log Simples: Mon Sep 30 2024 10:09:14 GMT-0400 (Amazon Standard Time), /hb1, GET
+Log completo: 2024-09-30T14:09:14.701Z, /css/styles.css, GET, 1.1, Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36
+Log Simples: Mon Sep 30 2024 10:09:14 GMT-0400 (Amazon Standard Time), /css/styles.css, GET
+Log completo: 2024-09-30T14:09:34.151Z, /, GET, 1.1, Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36
+Log Simples: Mon Sep 30 2024 10:09:34 GMT-0400 (Amazon Standard Time), /, GET
+Log completo: 2024-09-30T14:09:36.883Z, /hb1, GET, 1.1, Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36
+Log Simples: Mon Sep 30 2024 10:09:36 GMT-0400 (Amazon Standard Time), /hb1, GET
+Log completo: 2024-09-30T14:09:36.905Z, /css/styles.css, GET, 1.1, Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36
+Log Simples: Mon Sep 30 2024 10:09:36 GMT-0400 (Amazon Standard Time), /css/styles.css, GET
+Log completo: 2024-09-30T14:09:39.165Z, /hb4, GET, 1.1, Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36
+Log Simples: Mon Sep 30 2024 10:09:39 GMT-0400 (Amazon Standard Time), /hb4, GET
+Log completo: 2024-09-30T14:09:39.185Z, /css/styles.css, GET, 1.1, Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36
+Log Simples: Mon Sep 30 2024 10:09:39 GMT-0400 (Amazon Standard Time), /css/styles.css, GET
+Log completo: 2024-09-30T14:11:22.204Z, /hb4, GET, 1.1, Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36
+Log Simples: Mon Sep 30 2024 10:11:22 GMT-0400 (Amazon Standard Time), /hb4, GET
+Log completo: 2024-09-30T14:11:22.238Z, /css/styles.css, GET, 1.1, Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36
+Log Simples: Mon Sep 30 2024 10:11:22 GMT-0400 (Amazon Standard Time), /css/styles.css, GET
