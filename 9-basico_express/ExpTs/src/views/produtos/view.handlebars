@@ -1,0 +1,29 @@
+<div class='card' style='width: 18rem;'>
+  <div class='card-body'>
+    <h5 class='card-title'>
+      Nome:
+      {{nome}}
+    </h5>
+    <p class='card-text'>
+      Preço:
+      {{preco}}
+    </p>
+    <p class='card-text'>
+      Estoque:
+      {{estoque}}
+    </p>
+    <a
+      href='#'
+      class='btn btn-danger'
+      type='button'
+      onclick="deleteProduto('{{id}}')"
+    >Deletar</a>
+  </div>
+</div>
+
+<script>
+  window.deleteProduto = async function(id) { console.log('deleteProduto chamada
+  com ID:', id); try { await axios.delete(`/produtos/${id}/delete`);
+  window.location = "/produtos"; } catch (error) { console.error('Erro ao
+  deletar', error); alert('Erro ao deletar o produto'); } };
+</script>

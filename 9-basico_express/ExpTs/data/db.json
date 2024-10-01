@@ -1,0 +1,70 @@
+{
+  "produtos": [
+    {
+      "id": "1",
+      "nome": "Celular",
+      "preco": 100,
+      "estoque": 10
+    },
+    {
+      "id": "2",
+      "nome": "Tablet",
+      "preco": 200,
+      "estoque": 8
+    },
+    {
+      "id": "3",
+      "nome": "Monitor",
+      "preco": 150,
+      "estoque": 12
+    },
+    {
+      "id": "4",
+      "nome": "PS5 Pro",
+      "preco": 3.806,
+      "estoque": 12
+    },
+    {
+      "id": "5",
+      "nome": "Ventilador",
+      "preco": 200,
+      "estoque": 8
+    },
+    {
+      "id": "6",
+      "nome": "Geladeira",
+      "preco": 1500,
+      "estoque": 20
+    },
+    {
+      "id": "7",
+      "nome": "Mouse",
+      "preco": 50,
+      "estoque": 90
+    },
+    {
+      "id": "dbc6",
+      "nome": "Mesa",
+      "preco": "5000",
+      "estoque": "20"
+    },
+    {
+      "id": "14ce",
+      "nome": "Cabo Usb",
+      "preco": "20",
+      "estoque": "237"
+    },
+    {
+      "id": "df4d",
+      "nome": "Camisa do Sepultura",
+      "preco": "50",
+      "estoque": "2"
+    },
+    {
+      "id": "1aa8",
+      "nome": "Mouse Logitech Bluetooth",
+      "preco": "200",
+      "estoque": "90"
+    }
+  ]
+}

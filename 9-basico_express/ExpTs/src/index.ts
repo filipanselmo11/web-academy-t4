@@ -20,12 +20,6 @@ app.set('view engine', 'handlebars');
 
 app.set('views', `${__dirname}/views`);
 
-app.use(logger('complete'));
-
-app.use(logger('simple'));
-
-app.use(router);
-
 app.use(sass({
     src: `${__dirname}/../public/scss`,
     dest: `${__dirname}/../public/css`,
@@ -34,6 +28,14 @@ app.use(sass({
 }));
 
 app.use('/css', express.static(`${process.cwd()}/public/css`));
+
+app.use(express.urlencoded({ extended: false }));
+
+app.use(logger('complete'));
+
+app.use(logger('simple'));
+
+app.use(router);
 
 app.listen(PORT, () => {
     console.log(`App running at port: ${PORT}`);

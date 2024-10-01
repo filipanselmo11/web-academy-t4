@@ -1,0 +1,31 @@
+<h3>
+  Adicionar Produto
+</h3>
+
+<div class='col-6'>
+  <form action='/produtos/create' method='post'>
+    <div class='mb-3'>
+      <label for='nome' class='form-label'>Nome do produto</label>
+      <input
+        type='text'
+        class='form-control'
+        id='nome'
+        name='nome'
+        placeholder='Notebook Acer Nitro 5'
+      />
+    </div>
+    <div class='mb-3'>
+      <label for='preco' class='form-label'>Preço</label>
+      <input type='number' class='form-control' id='preco' name='preco' />
+    </div>
+    <div class='mb-3'>
+      <label for='estoque' class='form-label'>Estoque</label>
+      <input type='number' class='form-control' id='estoque' name='estoque' />
+    </div>
+    <div class='mb-3'>
+      <button class='btn btn-primary' type='submit'>
+        Cadastrar Produto
+      </button>
+    </div>
+  </form>
+</div>

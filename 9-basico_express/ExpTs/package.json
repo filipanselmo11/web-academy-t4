@@ -3,10 +3,11 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon src/index.ts",
+    "start": "nodemon src/index.ts --watch src",
     "build": "tsc",
     "start:prod": "node build/index.js",
-    "start:sass": "npx sass public/scss/styles.scss"
+    "start:sass": "npx sass public/scss/styles.scss",
+    "db:start": "npx json-server --watch data/db.json --port 8080"
   },
   "keywords": [],
   "author": "",
@@ -26,10 +27,12 @@
     "typescript-eslint": "^8.7.0"
   },
   "dependencies": {
+    "axios": "^1.7.7",
     "dotenv": "^16.4.5",
     "envalid": "^8.0.0",
     "express": "^4.21.0",
     "express-handlebars": "^8.0.1",
+    "json-server": "^1.0.0-beta.3",
     "lorem-ipsum": "^2.0.8",
     "node-sass-middleware": "^1.1.0",
     "nodemon": "^3.1.6",

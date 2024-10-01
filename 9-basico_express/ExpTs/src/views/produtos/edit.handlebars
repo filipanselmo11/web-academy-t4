@@ -1,0 +1,43 @@
+<h3>
+  Editar Produto
+</h3>
+
+<div class='col-6'>
+  <form action='/produtos/{{id}}' method='post'>
+    <div class='mb-3'>
+      <label for='nome' class='form-label'>Nome do produto</label>
+      <input
+        type='text'
+        class='form-control'
+        id='nome'
+        name='nome'
+        value='{{nome}}'
+      />
+    </div>
+    <div class='mb-3'>
+      <label for='preco' class='form-label'>Preço</label>
+      <input
+        type='number'
+        class='form-control'
+        id='preco'
+        name='preco'
+        value='{{preco}}'
+      />
+    </div>
+    <div class='mb-3'>
+      <label for='estoque' class='form-label'>Estoque</label>
+      <input
+        type='number'
+        class='form-control'
+        id='estoque'
+        name='estoque'
+        value='{{estoque}}'
+      />
+    </div>
+    <div class='mb-3'>
+      <button class='btn btn-primary' type='submit'>
+        Atualizar Produto
+      </button>
+    </div>
+  </form>
+</div>

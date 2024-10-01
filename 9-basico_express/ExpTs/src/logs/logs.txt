@@ -243,3 +243,291 @@ Log completo: 2024-09-30T14:11:22.204Z, /hb4, GET, 1.1, Mozilla/5.0 (Windows NT 
 Log Simples: Mon Sep 30 2024 10:11:22 GMT-0400 (Amazon Standard Time), /hb4, GET
 Log completo: 2024-09-30T14:11:22.238Z, /css/styles.css, GET, 1.1, Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36
 Log Simples: Mon Sep 30 2024 10:11:22 GMT-0400 (Amazon Standard Time), /css/styles.css, GET
+Log completo: 2024-09-30T18:07:14.630Z, /, GET, 1.1, Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36
+Log Simples: Mon Sep 30 2024 14:07:14 GMT-0400 (Amazon Standard Time), /, GET
+Log completo: 2024-09-30T18:07:18.059Z, /hb1, GET, 1.1, Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36
+Log Simples: Mon Sep 30 2024 14:07:18 GMT-0400 (Amazon Standard Time), /hb1, GET
+Log completo: 2024-09-30T18:08:17.814Z, /hb1, GET, 1.1, Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36
+Log Simples: Mon Sep 30 2024 14:08:17 GMT-0400 (Amazon Standard Time), /hb1, GET
+Log completo: 2024-09-30T18:08:50.244Z, /hb1, GET, 1.1, Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36
+Log Simples: Mon Sep 30 2024 14:08:50 GMT-0400 (Amazon Standard Time), /hb1, GET
+Log completo: 2024-09-30T18:27:07.011Z, /hb1, GET, 1.1, Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36
+Log Simples: Mon Sep 30 2024 14:27:07 GMT-0400 (Amazon Standard Time), /hb1, GET
+Log completo: 2024-09-30T18:27:13.528Z, /produtos/index, GET, 1.1, Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36
+Log Simples: Mon Sep 30 2024 14:27:13 GMT-0400 (Amazon Standard Time), /produtos/index, GET
+Log completo: 2024-09-30T18:27:27.426Z, /produtos, GET, 1.1, Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36
+Log Simples: Mon Sep 30 2024 14:27:27 GMT-0400 (Amazon Standard Time), /produtos, GET
+Log completo: 2024-09-30T18:29:21.469Z, /, GET, 1.1, Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36
+Log Simples: Mon Sep 30 2024 14:29:21 GMT-0400 (Amazon Standard Time), /, GET
+Log completo: 2024-09-30T18:29:28.676Z, /hb1, GET, 1.1, Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36
+Log Simples: Mon Sep 30 2024 14:29:28 GMT-0400 (Amazon Standard Time), /hb1, GET
+Log completo: 2024-09-30T18:29:30.079Z, /produtos, GET, 1.1, Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36
+Log Simples: Mon Sep 30 2024 14:29:30 GMT-0400 (Amazon Standard Time), /produtos, GET
+Log completo: 2024-09-30T18:29:33.883Z, /produtos/create, GET, 1.1, Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36
+Log Simples: Mon Sep 30 2024 14:29:33 GMT-0400 (Amazon Standard Time), /produtos/create, GET
+Log completo: 2024-09-30T18:30:18.554Z, /produtos/create, GET, 1.1, Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36
+Log Simples: Mon Sep 30 2024 14:30:18 GMT-0400 (Amazon Standard Time), /produtos/create, GET
+Log completo: 2024-09-30T18:30:22.339Z, /produtos, GET, 1.1, Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36
+Log Simples: Mon Sep 30 2024 14:30:22 GMT-0400 (Amazon Standard Time), /produtos, GET
+Log completo: 2024-09-30T18:30:48.739Z, /produtos/create, GET, 1.1, Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36
+Log Simples: Mon Sep 30 2024 14:30:48 GMT-0400 (Amazon Standard Time), /produtos/create, GET
+Log completo: 2024-09-30T18:32:19.344Z, /, GET, 1.1, Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36
+Log Simples: Mon Sep 30 2024 14:32:19 GMT-0400 (Amazon Standard Time), /, GET
+Log completo: 2024-09-30T18:32:22.925Z, /hb1, GET, 1.1, Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36
+Log Simples: Mon Sep 30 2024 14:32:22 GMT-0400 (Amazon Standard Time), /hb1, GET
+Log completo: 2024-09-30T18:32:28.812Z, /produtos, GET, 1.1, Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36
+Log Simples: Mon Sep 30 2024 14:32:28 GMT-0400 (Amazon Standard Time), /produtos, GET
+Log completo: 2024-09-30T18:33:56.803Z, /produtos, GET, 1.1, Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36
+Log Simples: Mon Sep 30 2024 14:33:56 GMT-0400 (Amazon Standard Time), /produtos, GET
+Log completo: 2024-09-30T18:34:18.921Z, /produtos/create, GET, 1.1, Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36
+Log Simples: Mon Sep 30 2024 14:34:18 GMT-0400 (Amazon Standard Time), /produtos/create, GET
+Log completo: 2024-09-30T18:34:53.000Z, /produtos/create, GET, 1.1, Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36
+Log Simples: Mon Sep 30 2024 14:34:53 GMT-0400 (Amazon Standard Time), /produtos/create, GET
+Log completo: 2024-09-30T18:35:06.826Z, /produtos/create, GET, 1.1, Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36
+Log Simples: Mon Sep 30 2024 14:35:06 GMT-0400 (Amazon Standard Time), /produtos/create, GET
+Log Simples: Mon Sep 30 2024 14:35:51 GMT-0400 (Amazon Standard Time), /produtos/create, GET
+Log completo: 2024-09-30T18:35:51.409Z, /produtos/create, GET, 1.1, Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36
+Log completo: 2024-09-30T18:35:55.545Z, /produtos/, GET, 1.1, Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36
+Log Simples: Mon Sep 30 2024 14:35:55 GMT-0400 (Amazon Standard Time), /produtos/, GET
+Log completo: 2024-09-30T18:35:58.254Z, /produtos, GET, 1.1, Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36
+Log Simples: Mon Sep 30 2024 14:35:58 GMT-0400 (Amazon Standard Time), /produtos, GET
+Log completo: 2024-09-30T18:35:58.416Z, /produtos, GET, 1.1, Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36
+Log Simples: Mon Sep 30 2024 14:35:58 GMT-0400 (Amazon Standard Time), /produtos, GET
+Log completo: 2024-09-30T18:36:01.763Z, /produtos/create, GET, 1.1, Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36
+Log Simples: Mon Sep 30 2024 14:36:01 GMT-0400 (Amazon Standard Time), /produtos/create, GET
+Log completo: 2024-09-30T18:39:08.506Z, /, GET, 1.1, Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36
+Log Simples: Mon Sep 30 2024 14:39:08 GMT-0400 (Amazon Standard Time), /, GET
+Log completo: 2024-09-30T18:39:12.286Z, /produtos/create, GET, 1.1, Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36
+Log Simples: Mon Sep 30 2024 14:39:12 GMT-0400 (Amazon Standard Time), /produtos/create, GET
+Log completo: 2024-09-30T18:39:13.435Z, /produtos, GET, 1.1, Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36
+Log Simples: Mon Sep 30 2024 14:39:13 GMT-0400 (Amazon Standard Time), /produtos, GET
+Log completo: 2024-09-30T18:39:18.768Z, /produtos/1, GET, 1.1, Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36
+Log Simples: Mon Sep 30 2024 14:39:18 GMT-0400 (Amazon Standard Time), /produtos/1, GET
+Log completo: 2024-09-30T18:39:37.964Z, /produtos/create, GET, 1.1, Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36
+Log Simples: Mon Sep 30 2024 14:39:37 GMT-0400 (Amazon Standard Time), /produtos/create, GET
+Log completo: 2024-09-30T18:39:53.700Z, /produtos/create, POST, 1.1, Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36
+Log Simples: Mon Sep 30 2024 14:39:53 GMT-0400 (Amazon Standard Time), /produtos/create, POST
+Log completo: 2024-09-30T18:39:53.717Z, /produtos, GET, 1.1, Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36
+Log Simples: Mon Sep 30 2024 14:39:53 GMT-0400 (Amazon Standard Time), /produtos, GET
+Log completo: 2024-09-30T21:24:20.014Z, /, GET, 1.1, Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36
+Log Simples: Mon Sep 30 2024 17:24:20 GMT-0400 (Amazon Standard Time), /, GET
+Log completo: 2024-09-30T21:24:20.238Z, /favicon.ico, GET, 1.1, Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36
+Log Simples: Mon Sep 30 2024 17:24:20 GMT-0400 (Amazon Standard Time), /favicon.ico, GET
+Log completo: 2024-09-30T21:24:35.937Z, /produtos, GET, 1.1, Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36
+Log Simples: Mon Sep 30 2024 17:24:35 GMT-0400 (Amazon Standard Time), /produtos, GET
+Log completo: 2024-09-30T21:24:44.011Z, /produtos/create, GET, 1.1, Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36
+Log Simples: Mon Sep 30 2024 17:24:44 GMT-0400 (Amazon Standard Time), /produtos/create, GET
+Log completo: 2024-09-30T21:24:46.964Z, /produtos/1, GET, 1.1, Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36
+Log Simples: Mon Sep 30 2024 17:24:46 GMT-0400 (Amazon Standard Time), /produtos/1, GET
+Log completo: 2024-09-30T21:25:26.305Z, /produtos, GET, 1.1, Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36
+Log Simples: Mon Sep 30 2024 17:25:26 GMT-0400 (Amazon Standard Time), /produtos, GET
+Log completo: 2024-09-30T21:25:30.113Z, /produtos/2, GET, 1.1, Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36
+Log Simples: Mon Sep 30 2024 17:25:30 GMT-0400 (Amazon Standard Time), /produtos/2, GET
+Log completo: 2024-09-30T21:28:25.842Z, /, GET, 1.1, Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36
+Log Simples: Mon Sep 30 2024 17:28:25 GMT-0400 (Amazon Standard Time), /, GET
+Log completo: 2024-09-30T21:28:29.935Z, /produtos/create, GET, 1.1, Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36
+Log Simples: Mon Sep 30 2024 17:28:29 GMT-0400 (Amazon Standard Time), /produtos/create, GET
+Log completo: 2024-09-30T21:28:31.014Z, /produtos, GET, 1.1, Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36
+Log Simples: Mon Sep 30 2024 17:28:31 GMT-0400 (Amazon Standard Time), /produtos, GET
+Log completo: 2024-09-30T21:28:33.796Z, /produtos/1, GET, 1.1, Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36
+Log Simples: Mon Sep 30 2024 17:28:33 GMT-0400 (Amazon Standard Time), /produtos/1, GET
+Log completo: 2024-09-30T21:29:56.154Z, /produtos/df4d, GET, 1.1, Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36
+Log Simples: Mon Sep 30 2024 17:29:56 GMT-0400 (Amazon Standard Time), /produtos/df4d, GET
+Log completo: 2024-09-30T21:30:14.249Z, /produtos/df4d, GET, 1.1, Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36
+Log Simples: Mon Sep 30 2024 17:30:14 GMT-0400 (Amazon Standard Time), /produtos/df4d, GET
+Log completo: 2024-09-30T21:30:33.291Z, /produtos/df4d, GET, 1.1, Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36
+Log Simples: Mon Sep 30 2024 17:30:33 GMT-0400 (Amazon Standard Time), /produtos/df4d, GET
+Log completo: 2024-09-30T21:30:47.373Z, /produtos/df4d, GET, 1.1, Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36
+Log Simples: Mon Sep 30 2024 17:30:47 GMT-0400 (Amazon Standard Time), /produtos/df4d, GET
+Log completo: 2024-09-30T21:30:51.464Z, /produtos/4, GET, 1.1, Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36
+Log Simples: Mon Sep 30 2024 17:30:51 GMT-0400 (Amazon Standard Time), /produtos/4, GET
+Log completo: 2024-09-30T22:01:57.642Z, /produtos, GET, 1.1, Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36
+Log Simples: Mon Sep 30 2024 18:01:57 GMT-0400 (Amazon Standard Time), /produtos, GET
+Log completo: 2024-09-30T22:02:00.217Z, /produtos/1/edit, GET, 1.1, Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36
+Log Simples: Mon Sep 30 2024 18:02:00 GMT-0400 (Amazon Standard Time), /produtos/1/edit, GET
+Log completo: 2024-09-30T22:03:03.493Z, /produtos/1/edit, GET, 1.1, Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36
+Log Simples: Mon Sep 30 2024 18:03:03 GMT-0400 (Amazon Standard Time), /produtos/1/edit, GET
+Log completo: 2024-09-30T22:15:43.489Z, /, GET, 1.1, Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36
+Log Simples: Mon Sep 30 2024 18:15:43 GMT-0400 (Amazon Standard Time), /, GET
+Log completo: 2024-09-30T22:15:48.117Z, /produtos/create, GET, 1.1, Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36
+Log Simples: Mon Sep 30 2024 18:15:48 GMT-0400 (Amazon Standard Time), /produtos/create, GET
+Log completo: 2024-09-30T22:15:49.360Z, /produtos, GET, 1.1, Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36
+Log Simples: Mon Sep 30 2024 18:15:49 GMT-0400 (Amazon Standard Time), /produtos, GET
+Log completo: 2024-09-30T22:15:52.244Z, /produtos/1/edit, GET, 1.1, Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36
+Log Simples: Mon Sep 30 2024 18:15:52 GMT-0400 (Amazon Standard Time), /produtos/1/edit, GET
+Log completo: 2024-09-30T22:15:57.147Z, /produtos/1/edit, POST, 1.1, Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36
+Log Simples: Mon Sep 30 2024 18:15:57 GMT-0400 (Amazon Standard Time), /produtos/1/edit, POST
+Log completo: 2024-09-30T22:16:31.339Z, /produtos/1/edit, POST, 1.1, Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36
+Log Simples: Mon Sep 30 2024 18:16:31 GMT-0400 (Amazon Standard Time), /produtos/1/edit, POST
+Log completo: 2024-09-30T22:18:24.855Z, /produtos, GET, 1.1, Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36
+Log Simples: Mon Sep 30 2024 18:18:24 GMT-0400 (Amazon Standard Time), /produtos, GET
+Log completo: 2024-09-30T22:18:27.137Z, /produtos/1/edit, GET, 1.1, Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36
+Log Simples: Mon Sep 30 2024 18:18:27 GMT-0400 (Amazon Standard Time), /produtos/1/edit, GET
+Log completo: 2024-09-30T22:18:37.170Z, /produtos/1/edit, POST, 1.1, Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36
+Log Simples: Mon Sep 30 2024 18:18:37 GMT-0400 (Amazon Standard Time), /produtos/1/edit, POST
+Log completo: 2024-09-30T22:19:52.350Z, /produtos, GET, 1.1, Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36
+Log Simples: Mon Sep 30 2024 18:19:52 GMT-0400 (Amazon Standard Time), /produtos, GET
+Log completo: 2024-09-30T22:19:54.560Z, /produtos/2/edit, GET, 1.1, Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36
+Log Simples: Mon Sep 30 2024 18:19:54 GMT-0400 (Amazon Standard Time), /produtos/2/edit, GET
+Log completo: 2024-09-30T22:19:58.502Z, /produtos/2/edit, POST, 1.1, Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36
+Log Simples: Mon Sep 30 2024 18:19:58 GMT-0400 (Amazon Standard Time), /produtos/2/edit, POST
+Log completo: 2024-09-30T22:20:17.000Z, /produtos, GET, 1.1, Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36
+Log Simples: Mon Sep 30 2024 18:20:17 GMT-0400 (Amazon Standard Time), /produtos, GET
+Log completo: 2024-09-30T22:20:19.849Z, /produtos/3/edit, GET, 1.1, Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36
+Log Simples: Mon Sep 30 2024 18:20:19 GMT-0400 (Amazon Standard Time), /produtos/3/edit, GET
+Log Simples: Mon Sep 30 2024 18:20:22 GMT-0400 (Amazon Standard Time), /produtos/3/edit, POST
+Log completo: 2024-09-30T22:20:22.850Z, /produtos/3/edit, POST, 1.1, Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36
+Log completo: 2024-09-30T22:20:59.327Z, /produtos, GET, 1.1, Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36
+Log Simples: Mon Sep 30 2024 18:20:59 GMT-0400 (Amazon Standard Time), /produtos, GET
+Log completo: 2024-09-30T22:21:00.868Z, /produtos/1/edit, GET, 1.1, Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36
+Log Simples: Mon Sep 30 2024 18:21:00 GMT-0400 (Amazon Standard Time), /produtos/1/edit, GET
+Log completo: 2024-09-30T22:21:06.148Z, /produtos/1/edit, POST, 1.1, Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36
+Log Simples: Mon Sep 30 2024 18:21:06 GMT-0400 (Amazon Standard Time), /produtos/1/edit, POST
+Log completo: 2024-09-30T22:23:20.740Z, /produtos, GET, 1.1, Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36
+Log Simples: Mon Sep 30 2024 18:23:20 GMT-0400 (Amazon Standard Time), /produtos, GET
+Log completo: 2024-09-30T22:23:22.478Z, /produtos/1/edit, GET, 1.1, Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36
+Log Simples: Mon Sep 30 2024 18:23:22 GMT-0400 (Amazon Standard Time), /produtos/1/edit, GET
+Log completo: 2024-09-30T22:23:49.872Z, /produtos, GET, 1.1, Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36
+Log Simples: Mon Sep 30 2024 18:23:49 GMT-0400 (Amazon Standard Time), /produtos, GET
+Log completo: 2024-09-30T22:23:51.667Z, /produtos/1/edit, GET, 1.1, Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36
+Log Simples: Mon Sep 30 2024 18:23:51 GMT-0400 (Amazon Standard Time), /produtos/1/edit, GET
+Log completo: 2024-09-30T22:27:26.968Z, /, GET, 1.1, Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36
+Log Simples: Mon Sep 30 2024 18:27:26 GMT-0400 (Amazon Standard Time), /, GET
+Log completo: 2024-09-30T22:27:30.536Z, /produtos, GET, 1.1, Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36
+Log Simples: Mon Sep 30 2024 18:27:30 GMT-0400 (Amazon Standard Time), /produtos, GET
+Log completo: 2024-09-30T22:27:34.808Z, /produtos/1, GET, 1.1, Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36
+Log Simples: Mon Sep 30 2024 18:27:34 GMT-0400 (Amazon Standard Time), /produtos/1, GET
+Log completo: 2024-09-30T22:27:48.629Z, /produtos, GET, 1.1, Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36
+Log Simples: Mon Sep 30 2024 18:27:48 GMT-0400 (Amazon Standard Time), /produtos, GET
+Log completo: 2024-09-30T22:31:07.125Z, /produtos, GET, 1.1, Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36
+Log Simples: Mon Sep 30 2024 18:31:07 GMT-0400 (Amazon Standard Time), /produtos, GET
+Log completo: 2024-09-30T22:31:09.756Z, /produtos/1, GET, 1.1, Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36
+Log Simples: Mon Sep 30 2024 18:31:09 GMT-0400 (Amazon Standard Time), /produtos/1, GET
+Log completo: 2024-09-30T22:31:13.042Z, /produtos/1/edit, GET, 1.1, Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36
+Log Simples: Mon Sep 30 2024 18:31:13 GMT-0400 (Amazon Standard Time), /produtos/1/edit, GET
+Log completo: 2024-09-30T22:31:19.218Z, /produtos/2/edit, GET, 1.1, Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36
+Log Simples: Mon Sep 30 2024 18:31:19 GMT-0400 (Amazon Standard Time), /produtos/2/edit, GET
+Log completo: 2024-09-30T22:32:19.866Z, /, GET, 1.1, Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36
+Log Simples: Mon Sep 30 2024 18:32:19 GMT-0400 (Amazon Standard Time), /, GET
+Log completo: 2024-09-30T22:32:22.558Z, /produtos, GET, 1.1, Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36
+Log Simples: Mon Sep 30 2024 18:32:22 GMT-0400 (Amazon Standard Time), /produtos, GET
+Log completo: 2024-09-30T22:32:26.242Z, /produtos/1, GET, 1.1, Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36
+Log Simples: Mon Sep 30 2024 18:32:26 GMT-0400 (Amazon Standard Time), /produtos/1, GET
+Log completo: 2024-09-30T22:32:29.699Z, /produtos/1/edit, GET, 1.1, Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36
+Log Simples: Mon Sep 30 2024 18:32:29 GMT-0400 (Amazon Standard Time), /produtos/1/edit, GET
+Log completo: 2024-09-30T22:33:20.125Z, /produtos, GET, 1.1, Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36
+Log Simples: Mon Sep 30 2024 18:33:20 GMT-0400 (Amazon Standard Time), /produtos, GET
+Log completo: 2024-09-30T22:33:21.763Z, /produtos/1, GET, 1.1, Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36
+Log Simples: Mon Sep 30 2024 18:33:21 GMT-0400 (Amazon Standard Time), /produtos/1, GET
+Log completo: 2024-09-30T22:34:25.482Z, /produtos, GET, 1.1, Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36
+Log Simples: Mon Sep 30 2024 18:34:25 GMT-0400 (Amazon Standard Time), /produtos, GET
+Log completo: 2024-09-30T22:34:27.335Z, /produtos/1, GET, 1.1, Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36
+Log Simples: Mon Sep 30 2024 18:34:27 GMT-0400 (Amazon Standard Time), /produtos/1, GET
+Log completo: 2024-09-30T22:34:31.058Z, /produtos/1, GET, 1.1, Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36
+Log Simples: Mon Sep 30 2024 18:34:31 GMT-0400 (Amazon Standard Time), /produtos/1, GET
+Log completo: 2024-09-30T22:35:09.905Z, /produtos, GET, 1.1, Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36
+Log Simples: Mon Sep 30 2024 18:35:09 GMT-0400 (Amazon Standard Time), /produtos, GET
+Log completo: 2024-09-30T22:35:12.210Z, /produtos/1/edit, GET, 1.1, Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36
+Log Simples: Mon Sep 30 2024 18:35:12 GMT-0400 (Amazon Standard Time), /produtos/1/edit, GET
+Log completo: 2024-09-30T22:35:43.579Z, /produtos/1, GET, 1.1, Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36
+Log Simples: Mon Sep 30 2024 18:35:43 GMT-0400 (Amazon Standard Time), /produtos/1, GET
+Log completo: 2024-09-30T22:35:45.532Z, /produtos/1/delete, GET, 1.1, Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36
+Log Simples: Mon Sep 30 2024 18:35:45 GMT-0400 (Amazon Standard Time), /produtos/1/delete, GET
+Log completo: 2024-09-30T22:36:54.335Z, /, GET, 1.1, Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36
+Log Simples: Mon Sep 30 2024 18:36:54 GMT-0400 (Amazon Standard Time), /, GET
+Log completo: 2024-09-30T22:36:56.788Z, /produtos, GET, 1.1, Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36
+Log Simples: Mon Sep 30 2024 18:36:56 GMT-0400 (Amazon Standard Time), /produtos, GET
+Log completo: 2024-09-30T22:37:00.842Z, /produtos/1, GET, 1.1, Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36
+Log Simples: Mon Sep 30 2024 18:37:00 GMT-0400 (Amazon Standard Time), /produtos/1, GET
+Log completo: 2024-09-30T22:37:04.234Z, /produtos/1/edit, GET, 1.1, Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36
+Log Simples: Mon Sep 30 2024 18:37:04 GMT-0400 (Amazon Standard Time), /produtos/1/edit, GET
+Log completo: 2024-09-30T22:37:06.838Z, /produtos/3/edit, GET, 1.1, Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36
+Log Simples: Mon Sep 30 2024 18:37:06 GMT-0400 (Amazon Standard Time), /produtos/3/edit, GET
+Log completo: 2024-09-30T22:37:11.094Z, /produtos/1, GET, 1.1, Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36
+Log Simples: Mon Sep 30 2024 18:37:11 GMT-0400 (Amazon Standard Time), /produtos/1, GET
+Log completo: 2024-10-01T12:24:06.581Z, /, GET, 1.1, Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36
+Log Simples: Tue Oct 01 2024 08:24:06 GMT-0400 (Amazon Standard Time), /, GET
+Log completo: 2024-10-01T12:24:06.762Z, /favicon.ico, GET, 1.1, Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36
+Log Simples: Tue Oct 01 2024 08:24:06 GMT-0400 (Amazon Standard Time), /favicon.ico, GET
+Log completo: 2024-10-01T12:24:09.699Z, /produtos, GET, 1.1, Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36
+Log Simples: Tue Oct 01 2024 08:24:09 GMT-0400 (Amazon Standard Time), /produtos, GET
+Log completo: 2024-10-01T12:24:13.496Z, /produtos/1, GET, 1.1, Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36
+Log Simples: Tue Oct 01 2024 08:24:13 GMT-0400 (Amazon Standard Time), /produtos/1, GET
+Log completo: 2024-10-01T12:26:06.001Z, /produtos, GET, 1.1, Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36
+Log Simples: Tue Oct 01 2024 08:26:06 GMT-0400 (Amazon Standard Time), /produtos, GET
+Log completo: 2024-10-01T12:26:32.311Z, /produtos, GET, 1.1, Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36
+Log Simples: Tue Oct 01 2024 08:26:32 GMT-0400 (Amazon Standard Time), /produtos, GET
+Log completo: 2024-10-01T12:26:33.906Z, /produtos/1/edit, GET, 1.1, Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36
+Log Simples: Tue Oct 01 2024 08:26:33 GMT-0400 (Amazon Standard Time), /produtos/1/edit, GET
+Log completo: 2024-10-01T12:26:38.259Z, /produtos/1, GET, 1.1, Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36
+Log Simples: Tue Oct 01 2024 08:26:38 GMT-0400 (Amazon Standard Time), /produtos/1, GET
+Log completo: 2024-10-01T12:27:21.215Z, /produtos, GET, 1.1, Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36
+Log Simples: Tue Oct 01 2024 08:27:21 GMT-0400 (Amazon Standard Time), /produtos, GET
+Log completo: 2024-10-01T12:27:23.212Z, /produtos/1, GET, 1.1, Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36
+Log Simples: Tue Oct 01 2024 08:27:23 GMT-0400 (Amazon Standard Time), /produtos/1, GET
+Log completo: 2024-10-01T12:30:00.190Z, /, GET, 1.1, Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36
+Log Simples: Tue Oct 01 2024 08:30:00 GMT-0400 (Amazon Standard Time), /, GET
+Log completo: 2024-10-01T12:30:04.382Z, /produtos, GET, 1.1, Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36
+Log Simples: Tue Oct 01 2024 08:30:04 GMT-0400 (Amazon Standard Time), /produtos, GET
+Log completo: 2024-10-01T12:30:07.575Z, /produtos/1, GET, 1.1, Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36
+Log Simples: Tue Oct 01 2024 08:30:07 GMT-0400 (Amazon Standard Time), /produtos/1, GET
+Log completo: 2024-10-01T12:31:45.305Z, /produtos, GET, 1.1, Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36
+Log Simples: Tue Oct 01 2024 08:31:45 GMT-0400 (Amazon Standard Time), /produtos, GET
+Log completo: 2024-10-01T12:31:47.035Z, /produtos/1/edit, GET, 1.1, Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36
+Log Simples: Tue Oct 01 2024 08:31:47 GMT-0400 (Amazon Standard Time), /produtos/1/edit, GET
+Log completo: 2024-10-01T12:32:09.412Z, /produtos, GET, 1.1, Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36
+Log Simples: Tue Oct 01 2024 08:32:09 GMT-0400 (Amazon Standard Time), /produtos, GET
+Log completo: 2024-10-01T12:32:11.583Z, /produtos/1/edit, GET, 1.1, Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36
+Log Simples: Tue Oct 01 2024 08:32:11 GMT-0400 (Amazon Standard Time), /produtos/1/edit, GET
+Log completo: 2024-10-01T12:33:15.088Z, /produtos/1/edit, GET, 1.1, Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36
+Log Simples: Tue Oct 01 2024 08:33:15 GMT-0400 (Amazon Standard Time), /produtos/1/edit, GET
+Log Simples: Tue Oct 01 2024 08:36:13 GMT-0400 (Amazon Standard Time), /, GET
+Log completo: 2024-10-01T12:36:13.843Z, /, GET, 1.1, Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36
+Log completo: 2024-10-01T12:36:16.672Z, /produtos, GET, 1.1, Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36
+Log Simples: Tue Oct 01 2024 08:36:16 GMT-0400 (Amazon Standard Time), /produtos, GET
+Log completo: 2024-10-01T12:36:21.623Z, /produtos/1/edit, GET, 1.1, Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36
+Log Simples: Tue Oct 01 2024 08:36:21 GMT-0400 (Amazon Standard Time), /produtos/1/edit, GET
+Log completo: 2024-10-01T12:36:23.665Z, /produtos/1/edit, POST, 1.1, Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36
+Log Simples: Tue Oct 01 2024 08:36:23 GMT-0400 (Amazon Standard Time), /produtos/1/edit, POST
+Log completo: 2024-10-01T12:37:20.546Z, /, GET, 1.1, Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36
+Log Simples: Tue Oct 01 2024 08:37:20 GMT-0400 (Amazon Standard Time), /, GET
+Log completo: 2024-10-01T12:37:24.006Z, /produtos, GET, 1.1, Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36
+Log Simples: Tue Oct 01 2024 08:37:24 GMT-0400 (Amazon Standard Time), /produtos, GET
+Log completo: 2024-10-01T12:37:26.799Z, /produtos/create, GET, 1.1, Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36
+Log Simples: Tue Oct 01 2024 08:37:26 GMT-0400 (Amazon Standard Time), /produtos/create, GET
+Log completo: 2024-10-01T12:37:43.820Z, /produtos/create, POST, 1.1, Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36
+Log Simples: Tue Oct 01 2024 08:37:43 GMT-0400 (Amazon Standard Time), /produtos/create, POST
+Log completo: 2024-10-01T12:37:43.840Z, /produtos, GET, 1.1, Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36
+Log Simples: Tue Oct 01 2024 08:37:43 GMT-0400 (Amazon Standard Time), /produtos, GET
+Log completo: 2024-10-01T12:37:47.345Z, /produtos/1, GET, 1.1, Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36
+Log Simples: Tue Oct 01 2024 08:37:47 GMT-0400 (Amazon Standard Time), /produtos/1, GET
+Log completo: 2024-10-01T12:37:51.266Z, /produtos/2, GET, 1.1, Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36
+Log Simples: Tue Oct 01 2024 08:37:51 GMT-0400 (Amazon Standard Time), /produtos/2, GET
+Log completo: 2024-10-01T12:38:20.150Z, /produtos/1/edit, GET, 1.1, Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36
+Log Simples: Tue Oct 01 2024 08:38:20 GMT-0400 (Amazon Standard Time), /produtos/1/edit, GET
+Log completo: 2024-10-01T12:38:23.085Z, /produtos/1/edit, POST, 1.1, Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36
+Log Simples: Tue Oct 01 2024 08:38:23 GMT-0400 (Amazon Standard Time), /produtos/1/edit, POST
+Log completo: 2024-10-01T12:39:48.879Z, /produtos, GET, 1.1, Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36
+Log Simples: Tue Oct 01 2024 08:39:48 GMT-0400 (Amazon Standard Time), /produtos, GET
+Log completo: 2024-10-01T12:39:50.780Z, /produtos/1/edit, GET, 1.1, Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36
+Log Simples: Tue Oct 01 2024 08:39:50 GMT-0400 (Amazon Standard Time), /produtos/1/edit, GET
+Log completo: 2024-10-01T12:39:57.720Z, /produtos/1/edit, POST, 1.1, Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36
+Log Simples: Tue Oct 01 2024 08:39:57 GMT-0400 (Amazon Standard Time), /produtos/1/edit, POST
+Log completo: 2024-10-01T12:41:01.961Z, /produtos, GET, 1.1, Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36
+Log Simples: Tue Oct 01 2024 08:41:01 GMT-0400 (Amazon Standard Time), /produtos, GET
+Log completo: 2024-10-01T12:41:10.489Z, /produtos/1aa8/edit, GET, 1.1, Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36
+Log Simples: Tue Oct 01 2024 08:41:10 GMT-0400 (Amazon Standard Time), /produtos/1aa8/edit, GET
+Log completo: 2024-10-01T12:41:16.858Z, /produtos/1aa8/edit, POST, 1.1, Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36
+Log Simples: Tue Oct 01 2024 08:41:16 GMT-0400 (Amazon Standard Time), /produtos/1aa8/edit, POST
+Log completo: 2024-10-01T12:41:57.090Z, /produtos, GET, 1.1, Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36
+Log Simples: Tue Oct 01 2024 08:41:57 GMT-0400 (Amazon Standard Time), /produtos, GET
+Log completo: 2024-10-01T12:41:59.461Z, /produtos/1/edit, GET, 1.1, Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36
+Log Simples: Tue Oct 01 2024 08:41:59 GMT-0400 (Amazon Standard Time), /produtos/1/edit, GET
+Log completo: 2024-10-01T12:42:06.094Z, /produtos/1, POST, 1.1, Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36
+Log Simples: Tue Oct 01 2024 08:42:06 GMT-0400 (Amazon Standard Time), /produtos/1, POST
+Log completo: 2024-10-01T12:42:21.828Z, /produtos, GET, 1.1, Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36
+Log Simples: Tue Oct 01 2024 08:42:21 GMT-0400 (Amazon Standard Time), /produtos, GET
+Log completo: 2024-10-01T12:42:23.559Z, /produtos/1/edit, GET, 1.1, Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36
+Log Simples: Tue Oct 01 2024 08:42:23 GMT-0400 (Amazon Standard Time), /produtos/1/edit, GET
+Log completo: 2024-10-01T12:42:27.787Z, /produtos/1/edit, POST, 1.1, Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36
+Log Simples: Tue Oct 01 2024 08:42:27 GMT-0400 (Amazon Standard Time), /produtos/1/edit, POST

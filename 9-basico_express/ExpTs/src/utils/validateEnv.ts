@@ -4,7 +4,8 @@ const validateEnv = () => {
     cleanEnv(process.env, {
         NODE_ENV: str(),
         PORT: port(),
-        DIR_LOG: str()
+        DIR_LOG: str(),
+        DB_SERVER: str()
     });
 };
 
