@@ -1,0 +1,12 @@
+Cliente (RG, Fone, Sexo, PNome, MNome, UNome)
+Quarto (Numero, Preco, Andar, Descricao)
+Servico (Codigo, Tipo, Descricao, Valor)
+Reserva (RG, NumQuarto, DAta, NDias)
+Reserva[RG] → Cliente[RG]
+Reserva[NumQuarto] –. Quarto[Numero]
+Ocupa (RG, NumQuarto, DataHoraEntrada, DataHoraSaida)
+Ocupa[RG] → Cliente[RG]
+Ocupa[NumQuarto] → Quarto[Numero]
+Solicita (RG, NumQuarto, DataEntrada, CodServico, DataHora)
+Solicita[RG, NumQuarto, DataEntrda] → Ocupa[RG, NumQuarto, DataHoraEntrada]
+Solicita[CodServico] → Servico[Codigo]
