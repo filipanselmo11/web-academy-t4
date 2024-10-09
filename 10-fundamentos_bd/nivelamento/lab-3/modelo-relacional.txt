@@ -1,0 +1,30 @@
+Usuario(id, foto, nome, localizacao, interesses, biografia, dataNasc)
+
+Postagem(id, texto, video, imagem, outro)
+
+Grupo(id, interesses, hobbies, profissao, localizacao)
+
+Faz(idUsuario, idPostagem)
+
+Faz[id] --> Usuario[id]
+
+Faz[id] --> Postagem[id]
+
+Participa(idUsuario, idGrupo)
+
+Participa[id] --> Usuario[id]
+
+Participa[id] --> Grupo[id]
+
+Conecta(idUsuario)
+
+Conecta[id] --> Usuario[id]
+
+EnviarMensagem(idUsuario, idGrupo)
+
+EnviarMensagem[id] --> Usuario[id]
+
+EnviarMensagem[id] --> Grupo[id]
+
+
+
