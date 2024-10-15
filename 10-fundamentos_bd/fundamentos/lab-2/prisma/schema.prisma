@@ -1,0 +1,83 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+// Looking for ways to speed up your queries, or scale easily with your serverless or edge functions?
+// Try Prisma Accelerate: https://pris.ly/cli/accelerate-init
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "mysql"
+  url      = env("DATABASE_URL")
+}
+
+model Categoria {
+  id            Int            @id @default(autoincrement())
+  nome          String
+  subcategorias Subcategoria[]
+}
+
+model Subcategoria {
+  id          Int        @id @default(autoincrement())
+  nome        String
+  categoria   Categoria? @relation(fields: [categoriaId], references: [id])
+  categoriaId Int?
+  produtos    Produto[]
+}
+
+model Compra {
+  id             Int         @id @default(autoincrement())
+  dataHora       DateTime
+  desconto       Decimal
+  formaPagamento String
+  total          Decimal
+  itemCompra     ItemCompra? @relation(fields: [itemCompraId], references: [id])
+  itemCompraId   Int?
+}
+
+model ItemCompra {
+  id         Int      @id @default(autoincrement())
+  quantidade Int
+  preco      Decimal
+  compras    Compra[]
+}
+
+model Produto {
+  id            Int            @id @default(autoincrement())
+  modelo        String
+  fabricante    String
+  preco         Decimal
+  quantidade    Int
+  subCategorias Subcategoria[]
+  numeroSeries  NumeroSerie[]
+}
+
+model NumeroSerie {
+  id        Int      @id @default(autoincrement())
+  numero    Int      @unique
+  produto   Produto? @relation(fields: [produtoId], references: [id])
+  produtoId Int?
+}
+
+model Cliente {
+  id         Int       @id @default(autoincrement())
+  nome       String
+  celular    String
+  email      String    @unique
+  dataNasc   DateTime
+  endereco   Endereco? @relation(fields: [enderecoId], references: [id])
+  enderecoId Int?
+}
+
+model Endereco {
+  id          Int       @id @default(autoincrement())
+  logradouro  String
+  numero      Int       @unique
+  complemento String
+  bairro      String
+  cidade      String
+  cep         String
+  clientes    Cliente[]
+}
