@@ -1,74 +1,70 @@
+import { Product } from "@prisma/client";
 import { Request, Response } from "express";
-import { CreateProductDto, ProductDto } from "./product.types";
+import { checkAlreadExists, checkById, createProduct, deleteProduct, getAllProducts, readProduct, updateProduct } from "./product.service";
+import { ReasonPhrases, StatusCodes } from "http-status-codes";
+import { CreateProductDto, ProductDto, UpdateProductDto } from "./product.types";
 
 
-const products: ProductDto[] = [
-    { id: 1, name: 'Playstation 5', price: 5000 },
-    { id: 2, name: 'Ventilador', price: 200 },
-    { id: 3, name: 'Fiat Uno', price: 30000 },
-    { id: 4, name: 'Geladeira', price: 1500 },
-    { id: 5, name: 'Notebook Predator', price: 8000 },
-    { id: 6, name: 'Bicicleta', price: 900 },
-];
-
-const index = (req: Request, res: Response) => {
-    res.status(200).json(products);
-};
-
-const create = (req: Request, res: Response) => {
-    const { name, price }: CreateProductDto = req.body;
-    const newProd = {
-        id: products.length > 0 ? products[products.length - 1].id + 1 : 1,
-        name,
-        price
-    };
-
-    products.push(newProd);
-    res.status(201).json(newProd);
-};
-
-const read = (req: Request, res: Response) => {
-    const { id } = req.params;
-    const product = products.find(p => p.id === parseInt(id));
-
-    if (product) {
-        res.status(200).json(product);
-    } else {
-        res.status(404).json({
-            message: "Produto não encontrado"
-        });
+const index = async (req: Request, res: Response) => {
+    try {
+        const products: Product[] = await getAllProducts();
+        res.status(StatusCodes.OK).json(products);
+    } catch (error) {
+        res.status(StatusCodes.INTERNAL_SERVER_ERROR).json(ReasonPhrases.INTERNAL_SERVER_ERROR);
     }
 };
 
-const update = (req: Request, res: Response) => {
-    const { id } = req.params;
-    const { name, price }: ProductDto = req.body;
-
-    const product = products.find(p => p.id === parseInt(id));
-
-    if (product) {
-        product.name = name || product.name
-        product.price = price || product.price;
-        res.status(200).json(product);
-    } else {
-        res.status(404).json({
-            message: "Produto não encontrado"
-        })
+const create = async (req: Request, res: Response) => {
+    try {
+        const product: CreateProductDto = req.body;
+        if (!(await checkAlreadExists(product.name))) {
+            const newProduct = await createProduct(product);
+            res.status(StatusCodes.CREATED).json(newProduct);
+        } else {
+            res.status(StatusCodes.CONFLICT).json(ReasonPhrases.CONFLICT);
+        }
+    } catch (error) {
+        res.status(StatusCodes.INTERNAL_SERVER_ERROR).json(error);
     }
 };
 
-const remove = (req: Request, res: Response) => {
-    const { id } = req.params;
+const read = async (req: Request, res: Response) => {
+    try {
+        const { id } = req.params;
+        if ((await checkById(id))) {
+            const product = await readProduct(id);
+            res.status(StatusCodes.OK).json(product);
+        } else {
+            res.status(StatusCodes.NOT_FOUND).json(ReasonPhrases.NOT_FOUND);
+        }
+    } catch (error) {
+        res.status(StatusCodes.INTERNAL_SERVER_ERROR).json(error);
+    }
+};
 
-    const productIndex = products.findIndex(p => p.id === parseInt(id));
+const update = async (req: Request, res: Response) => {
+    try {
+        const { id } = req.params;
+        if ((await checkById(id))) {
+            const product: ProductDto = req.body;
+            const prodUpdated: UpdateProductDto = await updateProduct(id, product);
+            res.status(StatusCodes.OK).json(prodUpdated);
+        } else {
+            res.status(StatusCodes.NOT_FOUND).json(ReasonPhrases.NOT_FOUND);
+        }
 
-    if (productIndex > -1) {
-        const removedProd = products.splice(productIndex, 1);
-        res.status(200).json(removedProd[0]);
-    } else {
-        res.status(404).json({
-            message: "Produto não encontrado"
-        })
+    } catch (error) {
+        res.status(StatusCodes.INTERNAL_SERVER_ERROR).json(error);
+    }
+};
+
+const remove = async (req: Request, response: Response) => {
+    try {
+        const { id } = req.params;
+        await deleteProduct(id);
+        response.status(StatusCodes.NO_CONTENT).json();
+    } catch (error) {
+        response.status(StatusCodes.INTERNAL_SERVER_ERROR).json(ReasonPhrases.INTERNAL_SERVER_ERROR);
     }
 };
 
