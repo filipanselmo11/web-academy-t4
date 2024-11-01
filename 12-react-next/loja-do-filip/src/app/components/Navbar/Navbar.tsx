@@ -1,12 +1,16 @@
 "use client";
 import React from "react";
 
-export default function Navbar() {
+export interface NavbarProps {
+    title: string
+}
+
+export default function Navbar({ title }: NavbarProps) {
     return (
         <nav className="navbar navbar-expand-md bg-light border-bottom border-body sticky-top">
             <div className="container-fluid">
                 <a className="navbar-brand" href="/">
-                    Loja WA
+                    {title}
                 </a>
                 <button
                     className="navbar-toggler"

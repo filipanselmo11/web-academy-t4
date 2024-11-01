@@ -27,7 +27,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        <Navbar></Navbar>
+        <Navbar title="Loja do Fílip"></Navbar>
         {children}
       </body>
     </html>
