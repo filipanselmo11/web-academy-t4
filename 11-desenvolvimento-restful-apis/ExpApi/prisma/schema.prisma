@@ -21,3 +21,20 @@ model Product {
   createdAt     DateTime @default(now())
   updatedAt     DateTime @updatedAt
 }
+
+model User {
+  id         String   @id @default(uuid()) @db.Char(36)
+  name       String   @db.VarChar(100)
+  email      String   @unique @db.VarChar(100)
+  password   String   @db.Char(60)
+  createdAt  DateTime @default(now())
+  updatedAt  DateTime @updatedAt
+  userTypeId String   @db.Char(36)
+  userType   UserType @relation(fields: [userTypeId], references: [id])
+}
+
+model UserType {
+  id    String @id @default(uuid()) @db.Char(36)
+  label String @db.Char(6)
+  users User[]
+}
