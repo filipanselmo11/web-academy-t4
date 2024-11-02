@@ -1,6 +1,8 @@
 "use client";
 import React from "react";
-import Card from "./components/Card/Card";
+import CardProd from "./components/CardProd/CardProd";
+import ResumoCard from "./components/ResumoCard/ResumoCard";
+import ListagemProd from "./components/ListagemProd/ListagemProd";
 
 export default function Home() {
 
@@ -19,31 +21,26 @@ export default function Home() {
       <main>
         <div className="container p-5">
           {/* Resumo Carrinho component */}
-          <div className="card mb-4">
-            <div className="card-body">
-              <h5 className="card-title mb-4 fw-light">Resumo do Carrinho</h5>
-              <p className="card-text fw-medium">Quantidade total: 10</p>
-              <p className="card-text fw-medium">
-                Valor total: R${(1500).toFixed(2)}
-              </p>
-            </div>
-          </div>
-
           <h5 className="mb-3">Produtos disponíveis:</h5>
+          <ResumoCard
+            title="Resumo do Carrinho"
+            quantity={10}
+            totalValue={2000}>
+          </ResumoCard>
 
-          <div className="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-3">
+          <ListagemProd bootstrapClass="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-3">
             {prods.map((prod) => (
               <div className="col" key={prod.id}>
-                <Card
+                <CardProd
                   src="/placeholder.png"
                   altSrc="imagem placeholder"
                   title={prod.title}
                   price={prod.price}
                 >
-                </Card>
+                </CardProd>
               </div>
             ))}
-          </div>
+          </ListagemProd>
         </div>
       </main>
     </>

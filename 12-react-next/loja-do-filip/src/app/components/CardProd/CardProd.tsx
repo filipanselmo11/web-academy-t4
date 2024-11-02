@@ -9,7 +9,7 @@ export interface CardProps {
     price: number
 }
 
-export default function Card({ src, altSrc, title, price }: CardProps) {
+export default function CardProd({ src, altSrc, title, price }: CardProps) {
     return (
         <div className="card shadow-sm h-100">
             <Image
