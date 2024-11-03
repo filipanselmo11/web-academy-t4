@@ -1,0 +1,527 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "title": "Loja Virtual API",
+    "description": "Documentação da API",
+    "version": "1.0.0"
+  },
+  "host": "localhost:5566",
+  "basePath": "/",
+  "schemes": [
+    "http"
+  ],
+  "paths": {
+    "/v1/auth/signup": {
+      "post": {
+        "tags": [
+          "Auth"
+        ],
+        "summary": "Cria um novo usuário (registro).",
+        "description": "",
+        "parameters": [
+          {
+            "name": "body",
+            "in": "body",
+            "schema": {
+              "$ref": "#/definitions/SignupDto"
+            }
+          }
+        ],
+        "responses": {
+          "201": {
+            "description": "Usuário criado com sucesso.",
+            "schema": {
+              "$ref": "#/definitions/User"
+            }
+          },
+          "409": {
+            "description": "Usuário já existe."
+          },
+          "500": {
+            "description": "Erro interno do servidor."
+          }
+        }
+      }
+    },
+    "/v1/auth/login": {
+      "post": {
+        "tags": [
+          "Auth"
+        ],
+        "summary": "Autentica um usuário existente.",
+        "description": "",
+        "parameters": [
+          {
+            "name": "body",
+            "in": "body",
+            "schema": {
+              "$ref": "#/definitions/LoginDto"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Login bem-sucedido."
+          },
+          "401": {
+            "description": "Credenciais inválidas."
+          },
+          "500": {
+            "description": "Erro interno do servidor."
+          }
+        }
+      }
+    },
+    "/v1/auth/logout": {
+      "post": {
+        "tags": [
+          "Auth"
+        ],
+        "summary": "Faz logout do usuário atual.",
+        "description": "",
+        "responses": {
+          "204": {
+            "description": "Logout bem-sucedido (sem conteúdo)."
+          },
+          "400": {
+            "description": "Requisição inválida, usuário não autenticado."
+          },
+          "500": {
+            "description": "Erro interno do servidor."
+          }
+        }
+      }
+    },
+    "/v1/produto/": {
+      "get": {
+        "tags": [
+          "Produto"
+        ],
+        "summary": "Retorna todos os produtos cadastrados na base.",
+        "description": "",
+        "responses": {
+          "200": {
+            "schema": {
+              "$ref": "#/definitions/Product"
+            },
+            "description": "OK"
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "Produto"
+        ],
+        "summary": "Adiciona um novo produto na base.",
+        "description": "",
+        "parameters": [
+          {
+            "name": "body",
+            "in": "body",
+            "schema": {
+              "$ref": "#/definitions/CreateProductDto"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "schema": {
+              "$ref": "#/definitions/Product"
+            },
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/v1/produto/{id}": {
+      "get": {
+        "tags": [
+          "Produto"
+        ],
+        "summary": "Recupera dados de um produto específico.",
+        "description": "",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "type": "string",
+            "description": "ID do produto"
+          }
+        ],
+        "responses": {
+          "200": {
+            "schema": {
+              "$ref": "#/definitions/Product"
+            },
+            "description": "OK"
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "Produto"
+        ],
+        "summary": "Atualiza os dados de um produto específico.",
+        "description": "",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "type": "string",
+            "description": "ID do produto a ser atualizado"
+          },
+          {
+            "name": "body",
+            "in": "body",
+            "schema": {
+              "$ref": "#/definitions/UpdateProductDto"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Produto atualizado com sucesso.",
+            "schema": {
+              "$ref": "#/definitions/UpdateProductDto"
+            }
+          },
+          "404": {
+            "description": "Produto não encontrado."
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "Produto"
+        ],
+        "summary": "Remove um produto específico da base de dados.",
+        "description": "",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "type": "string",
+            "description": "ID do produto a ser removido"
+          }
+        ],
+        "responses": {
+          "204": {
+            "description": "Produto removido com sucesso (sem conteúdo)."
+          },
+          "404": {
+            "description": "Produto não encontrado."
+          }
+        }
+      }
+    },
+    "/v1/usuario/": {
+      "get": {
+        "tags": [
+          "Usuario"
+        ],
+        "summary": "Lista todos os usuários.",
+        "description": "",
+        "responses": {
+          "200": {
+            "description": "Lista de usuários recuperada com sucesso.",
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/User"
+              },
+              "xml": {
+                "name": "main"
+              }
+            }
+          },
+          "500": {
+            "description": "Erro interno do servidor."
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "Usuario"
+        ],
+        "summary": "Cria um novo usuário.",
+        "description": "",
+        "parameters": [
+          {
+            "name": "body",
+            "in": "body",
+            "schema": {
+              "$ref": "#/definitions/CreateUserDto"
+            }
+          }
+        ],
+        "responses": {
+          "201": {
+            "description": "Usuário criado com sucesso.",
+            "schema": {
+              "$ref": "#/definitions/User"
+            }
+          },
+          "409": {
+            "description": "Usuário já existe."
+          },
+          "500": {
+            "description": "Erro interno do servidor."
+          }
+        }
+      }
+    },
+    "/v1/usuario/{id}": {
+      "get": {
+        "tags": [
+          "Usuario"
+        ],
+        "summary": "Recupera os dados de um usuário específico.",
+        "description": "",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "type": "string",
+            "description": "ID do usuário"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Usuário encontrado.",
+            "schema": {
+              "$ref": "#/definitions/User"
+            }
+          },
+          "404": {
+            "description": "Usuário não encontrado."
+          },
+          "500": {
+            "description": "Erro interno do servidor."
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "Usuario"
+        ],
+        "summary": "Atualiza os dados de um usuário específico.",
+        "description": "",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "type": "string",
+            "description": "ID do usuário a ser atualizado"
+          },
+          {
+            "name": "body",
+            "in": "body",
+            "schema": {
+              "$ref": "#/definitions/UpdateUserDto"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Usuário atualizado com sucesso.",
+            "schema": {
+              "$ref": "#/definitions/UpdateUserDto"
+            }
+          },
+          "404": {
+            "description": "Usuário não encontrado."
+          },
+          "500": {
+            "description": "Erro interno do servidor."
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "Usuario"
+        ],
+        "summary": "Remove um usuário específico da base de dados.",
+        "description": "",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "type": "string",
+            "description": "ID do usuário a ser removido"
+          }
+        ],
+        "responses": {
+          "204": {
+            "description": "Usuário removido com sucesso (sem conteúdo)."
+          },
+          "404": {
+            "description": "Usuário não encontrado."
+          },
+          "500": {
+            "description": "Erro interno do servidor."
+          }
+        }
+      }
+    }
+  },
+  "definitions": {
+    "CreateProductDto": {
+      "type": "object",
+      "properties": {
+        "nome": {
+          "type": "string",
+          "example": "Martelo"
+        },
+        "preco": {
+          "type": "number",
+          "example": 29
+        },
+        "estoque": {
+          "type": "number",
+          "example": 10
+        }
+      }
+    },
+    "Product": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "example": "8a2053de-5d92-4c43-97c0-c9b2b0d56703"
+        },
+        "nome": {
+          "type": "string",
+          "example": "Bacon"
+        },
+        "preco": {
+          "type": "number",
+          "example": 261
+        },
+        "estoque": {
+          "type": "number",
+          "example": 1
+        },
+        "createdAt": {
+          "type": "string",
+          "example": "2023-11-07T19:27:15.645Z"
+        },
+        "updatedAt": {
+          "type": "string",
+          "example": "2023-11-07T19:27:15.645Z"
+        }
+      }
+    },
+    "UpdateProductDto": {
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string",
+          "example": "Novo nome do produto"
+        }
+      }
+    },
+    "CreateUSerDto": {
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string",
+          "example": "Fílip Anselmo"
+        },
+        "email": {
+          "type": "string",
+          "example": "filipanselmo@email.com"
+        },
+        "password": {
+          "type": "string",
+          "example": "senhaForte123"
+        },
+        "userTypeId": {
+          "type": "string",
+          "example": "54992b41-93bc-4348-899b-1a0dd5195823"
+        }
+      }
+    },
+    "User": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "example": "f2ee37ed-9306-4f7c-86a5-62c9cd6ac5b0"
+        },
+        "name": {
+          "type": "string",
+          "example": "Joao Carlos"
+        },
+        "email": {
+          "type": "string",
+          "example": "joao@email.com"
+        },
+        "createdAt": {
+          "type": "string",
+          "example": "2023-11-07T19:27:15.645Z"
+        },
+        "updatedAt": {
+          "type": "string",
+          "example": "2023-11-07T19:27:15.645Z"
+        },
+        "userTypeId": {
+          "type": "string",
+          "example": "538f50d8-257e-40c5-9d8e-6738287749a0"
+        }
+      }
+    },
+    "UpdateUserDto": {
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string",
+          "example": "Novo nome de usuário"
+        },
+        "password": {
+          "type": "string",
+          "example": "senhaNova"
+        },
+        "userType": {
+          "type": "string",
+          "example": "538f50d8-257e-40c5-9d8e-6738287749a0"
+        }
+      }
+    },
+    "SignupDto": {
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string",
+          "example": "Fulano de tal"
+        },
+        "email": {
+          "type": "string",
+          "example": "fulano@email.com"
+        },
+        "password": {
+          "type": "string",
+          "example": "1234"
+        }
+      }
+    },
+    "LoginDto": {
+      "type": "object",
+      "properties": {
+        "email": {
+          "type": "string",
+          "example": "fulano@email.com"
+        },
+        "password": {
+          "type": "string",
+          "example": "1234"
+        }
+      }
+    }
+  }
+}

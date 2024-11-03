@@ -5,8 +5,21 @@ import authRouter from '../resources/auth/auth.router';
 
 const router = Router();
 
-router.use('/products', productRouter);
-router.use('/users', userRouter);
-router.use('/auth', authRouter);
+router.use(
+  "/auth",
+  // #swagger.tags = ['Auth']
+  authRouter
+ );
+ router.use(
+  "/produto",
+  // #swagger.tags = ['Produto']
+  productRouter
+ );
+ router.use(
+  "/usuario",
+  // #swagger.tags = ['Usuario']
+  userRouter
+ );
+
 
 export default router;

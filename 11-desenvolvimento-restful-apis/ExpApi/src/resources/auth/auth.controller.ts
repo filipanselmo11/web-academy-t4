@@ -7,6 +7,23 @@ import { checkCredentials } from "./auth.service";
 
 
 const signUp = async (req: Request, res: Response) => {
+  /*
+    #swagger.summary = 'Cria um novo usuário (registro).'
+    #swagger.parameters['body'] = {
+        in: 'body',
+        schema: { $ref: '#/definitions/SignupDto' }
+    }
+    #swagger.responses[201] = {
+        description: 'Usuário criado com sucesso.',
+        schema: { $ref: '#/definitions/User' }
+    }
+    #swagger.responses[409] = {
+        description: 'Usuário já existe.'
+    }
+    #swagger.responses[500] = {
+        description: 'Erro interno do servidor.'
+    }
+    */
   const user: SignupDto = req.body;
   try{
     if (await findUserByEmail(user.email)) {
@@ -22,6 +39,22 @@ const signUp = async (req: Request, res: Response) => {
 
 
 const login = async (req: Request, res: Response) => {
+  /*
+    #swagger.summary = 'Autentica um usuário existente.'
+    #swagger.parameters['body'] = {
+        in: 'body',
+        schema: { $ref: '#/definitions/LoginDto' }
+    }
+    #swagger.responses[200] = {
+        description: 'Login bem-sucedido.'
+    }
+    #swagger.responses[401] = {
+        description: 'Credenciais inválidas.'
+    }
+    #swagger.responses[500] = {
+        description: 'Erro interno do servidor.'
+    }
+    */
   const credentials: LoginDto = req.body;
   try {
     const user = await checkCredentials(credentials);
@@ -38,6 +71,18 @@ const login = async (req: Request, res: Response) => {
 }
 
 const logout = async (req: Request, res: Response) => {
+  /*
+    #swagger.summary = 'Faz logout do usuário atual.'
+    #swagger.responses[204] = {
+        description: 'Logout bem-sucedido (sem conteúdo).'
+    }
+    #swagger.responses[400] = {
+        description: 'Requisição inválida, usuário não autenticado.'
+    }
+    #swagger.responses[500] = {
+        description: 'Erro interno do servidor.'
+    }
+    */
   if (!req.session.uid) {
     res.status(StatusCodes.BAD_REQUEST).send(ReasonPhrases.BAD_REQUEST);
   } else {
