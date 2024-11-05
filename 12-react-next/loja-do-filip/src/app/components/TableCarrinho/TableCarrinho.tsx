@@ -1,12 +1,11 @@
 "use client";
-import React from "react";
-import ItemCarrinho, { ItemCarrinhoProps } from "../ItemCarrinho/ItemCarrinho";
+import React, { ReactNode } from "react";
 
 export interface TableCarrinhoProps {
-  itens: ItemCarrinhoProps[];
+  children: ReactNode;
 }
 
-export default function TableCarrinho({ itens }: TableCarrinhoProps) {
+export default function TableCarrinho({ children }: TableCarrinhoProps) {
   return (
     <div className="table-responsive">
       <table className="table">
@@ -20,15 +19,7 @@ export default function TableCarrinho({ itens }: TableCarrinhoProps) {
           </tr>
         </thead>
         <tbody>
-          {itens.map((item) => (
-            <tr key={item.id}>
-              <ItemCarrinho
-                name={item.name}
-                price={item.price}
-                quantity={item.quantity}>
-              </ItemCarrinho>
-            </tr>
-          ))}
+          {children}
         </tbody>
       </table>
     </div>

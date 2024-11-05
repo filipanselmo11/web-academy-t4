@@ -2,6 +2,7 @@
 import React from "react";
 import TableCarrinho from "../components/TableCarrinho/TableCarrinho";
 import ResumoCarrinho from "../components/ResumoCarrinho/ResumoCarrinho";
+import ItemCarrinho from "../components/ItemCarrinho/ItemCarrinho";
 
 export default function Carrinho() {
     const itensCarrinho = [
@@ -22,7 +23,17 @@ export default function Carrinho() {
                             <h5 className="card-title mb-4 fw-light">
                                 Produtos selecionados
                             </h5>
-                            <TableCarrinho itens={itensCarrinho}></TableCarrinho>
+                            <TableCarrinho>
+                                {itensCarrinho.map((item) => (
+                                    <tr key={item.id}>
+                                        <ItemCarrinho
+                                            name={item.name}
+                                            price={item.price}
+                                            quantity={item.quantity}>
+                                        </ItemCarrinho>
+                                    </tr>
+                                ))}
+                            </TableCarrinho>
                         </div>
                     </div>
                     <ResumoCarrinho title="Resumo do carrinho" totalQuantity={7} totalValue={15000}></ResumoCarrinho>
