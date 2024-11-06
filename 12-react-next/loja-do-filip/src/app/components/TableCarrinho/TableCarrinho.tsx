@@ -1,11 +1,14 @@
 "use client";
-import React, { ReactNode } from "react";
+import { ItemCarrinhoInterface } from "@/app/types/itemCarrinho";
+import React from "react";
+import ItemCarrinho from "../ItemCarrinho/ItemCarrinho";
 
 export interface TableCarrinhoProps {
-  children: ReactNode;
+  itens: ItemCarrinhoInterface[];
+  removerItemDoCarrinho: (id: string) => void;
 }
 
-export default function TableCarrinho({ children }: TableCarrinhoProps) {
+export default function TableCarrinho({ itens, removerItemDoCarrinho }: TableCarrinhoProps) {
   return (
     <div className="table-responsive">
       <table className="table">
@@ -19,7 +22,13 @@ export default function TableCarrinho({ children }: TableCarrinhoProps) {
           </tr>
         </thead>
         <tbody>
-          {children}
+          {itens.map((item) => (
+            <tr key={item.id}>
+              <ItemCarrinho
+                itemCarrinho={item}
+                removerItemDoCarrinho={() => removerItemDoCarrinho(item.id)}></ItemCarrinho>
+            </tr>
+          ))}
         </tbody>
       </table>
     </div>

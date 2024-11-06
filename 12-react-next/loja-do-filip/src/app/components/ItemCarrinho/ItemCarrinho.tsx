@@ -1,33 +1,32 @@
 "use client";
+import { ItemCarrinhoInterface } from "@/app/types/itemCarrinho";
 import React from "react";
 
 export interface ItemCarrinhoProps {
-  id?: number;
-  name: string;
-  price: number;
-  quantity: number;
+  itemCarrinho: ItemCarrinhoInterface;
+  removerItemDoCarrinho: (id: string) => void;
 }
 
-export default function ItemCarrinho({ name, price, quantity }: ItemCarrinhoProps) {
-  const valorTotalProduto = (price: number, quantity: number): number => {
-    return price * quantity;
+export default function ItemCarrinho({ itemCarrinho, removerItemDoCarrinho }: ItemCarrinhoProps) {
+  const valorTotalProduto = (preco: number, quantidade: number): number => {
+    return preco * quantidade;
   }
   return (
     <>
       <td>
-        {name}
+        {itemCarrinho.nome}
       </td>
       <td>
-        R$ {price.toFixed(2)}
+        R$ {itemCarrinho.preco.toFixed(2)}
       </td>
       <td>
-        {quantity}
+        {itemCarrinho.quantidade}
       </td>
       <td>
-        R$ {valorTotalProduto(price, quantity).toFixed(2)}
+        R$ {valorTotalProduto(itemCarrinho.preco, itemCarrinho.quantidade).toFixed(2)}
       </td>
       <td>
-        <button className="btn btn-danger btn-sm">Remover</button>
+        <button className="btn btn-danger btn-sm" onClick={() => removerItemDoCarrinho(itemCarrinho.id)}>Remover</button>
       </td>
     </>
 

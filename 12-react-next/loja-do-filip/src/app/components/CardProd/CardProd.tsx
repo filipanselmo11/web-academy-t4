@@ -1,29 +1,28 @@
 "use client";
 import React from "react";
 import Image from "next/image";
+import { Produto } from "@/app/types/produto";
 
 export interface CardProps {
-    src: string,
-    altSrc: string,
-    title: string,
-    price: number
+    produto: Produto;
+    addAoCarrinho: (produto: Produto) => void;
 }
 
-export default function CardProd({ src, altSrc, title, price }: CardProps) {
+export default function CardProd({ produto, addAoCarrinho }: CardProps) {
     return (
         <div className="card shadow-sm h-100">
             <Image
-                src={src}
+                src={produto.fotos[0].src}
                 className="card-img-top"
-                alt={altSrc}
+                alt={produto.fotos[0].titulo}
                 width={300}
                 height={320}
             />
 
             <div className="card-body bg-light">
-                <h5 className="card-title">{title}</h5>
-                <p className="card-text text-secondary">R$ {price}</p>
-                <button className="btn btn-dark d-block w-100" type="button">
+                <h5 className="card-title">{produto.nome}</h5>
+                <p className="card-text text-secondary">R$ {produto.preco}</p>
+                <button className="btn btn-dark d-block w-100" type="button" onClick={() => addAoCarrinho(produto)}>
                     Adicionar no carrinho
                 </button>
             </div>

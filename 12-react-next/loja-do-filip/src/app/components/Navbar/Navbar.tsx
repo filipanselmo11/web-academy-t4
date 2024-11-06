@@ -2,15 +2,15 @@
 import React from "react";
 
 export interface NavbarProps {
-    title: string
+    titulo: string
 }
 
-export default function Navbar({ title }: NavbarProps) {
+export default function Navbar({ titulo }: NavbarProps) {
     return (
         <nav className="navbar navbar-expand-md bg-light border-bottom border-body sticky-top">
             <div className="container-fluid">
                 <a className="navbar-brand" href="/">
-                    {title}
+                    {titulo}
                 </a>
                 <button
                     className="navbar-toggler"
