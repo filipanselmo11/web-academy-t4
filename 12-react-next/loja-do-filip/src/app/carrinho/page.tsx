@@ -32,9 +32,7 @@ export default function Carrinho() {
                             <h5 className="card-title mb-4 fw-light">
                                 Produtos selecionados
                             </h5>
-                            <TableCarrinho
-                                itens={itensCarrinho}
-                                removerItemDoCarrinho={removerItemDoCarrinho}>
+                            <TableCarrinho itens={itensCarrinho} removerItemDoCarrinho={removerItemDoCarrinho}>
                             </TableCarrinho>
                         </div>
                     </div>
