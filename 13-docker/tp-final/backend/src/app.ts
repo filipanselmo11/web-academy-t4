@@ -12,8 +12,8 @@ const app = express();
 // de entradas JSON, no formato 'application/json'...
 app.use(express.json());
 
-// Configurando o middleware de liberação
-// de cabeçalho Cross Origin Resource
+// Configurando o middleware de liberação 
+// de cabeçalho Cross Origin Resource 
 // Sharing (CORS) da aplicação...
 app.use(cors());
 

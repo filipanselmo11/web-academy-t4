@@ -1,15 +1,30 @@
 services:
+  backend:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: backend_container
+    environment:
+      - NODE_ENV=production
+      - PORT=4444
+    ports:
+      - "4444:4444"
+    depends_on:
+      - db
+    volumes:
+      - .:/app
+    command: ["tail", "-f", "/dev/null"]
+
   db:
-    image: mysql:8.0
-    container_name: bd_livro_container
-    restart: always
+    image: mysql:8
+    container_name: backend_db_container
+    environment:
+      MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD}
+      MYSQL_DATABASE: ${MYSQL_DATABASE}
+    volumes:
+      - mysql_data:/var/lib/mysql
     ports:
       - "3306:3306"
-    environment:
-      MYSQL_ROOT_PASSWORD: "${MYSQL_ROOT_PASSWORD}"
-    volumes:
-      - db:/var/lib/mysql
 
 volumes:
-  db:
-    driver: local
+  mysql_data:

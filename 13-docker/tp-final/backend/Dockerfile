@@ -1,15 +1,20 @@
-FROM node:18.16 AS BUILD
+# Estágio de construção da aplicação
+FROM node:18.16 AS build
 
 WORKDIR /appbuild
 
 COPY package.json .
 COPY package-lock.json .
+COPY tsconfig.json .
 COPY ./src ./src
 COPY ./prisma ./prisma
 
 RUN npm ci
 RUN npm run build
+RUN npm list tsc-alias
+RUN ls /appbuild/dist
 
+# Estágio de execução da aplicação
 FROM node:18.16-slim
 
 WORKDIR /app
@@ -25,6 +30,6 @@ COPY --from=build /appbuild/dist ./dist
 
 RUN npm ci --omit=dev
 
-EXPOSE 444
+EXPOSE 4444
 
 CMD npm start

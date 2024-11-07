@@ -14,12 +14,12 @@ datasource db {
 }
 
 model Livro {
-  id        String  @id @map("id")
-  nome      String  @map("nome")
-  sinopse   String  @map("sinopse")
-  isbn      String  @unique @map("isbn")
-  autores   Json    @map("autores")
-  urlImagem String? @map("url_imagem")
+  id          String @id @map("id")
+  nome        String @map("nome")
+  sinopse     String @map("sinopse")
+  isbn        String @unique @map("isbn")
+  autores     Json @map("autores")
+  urlImagem   String? @map("url_imagem")
 
   @@map("livros")
 }
