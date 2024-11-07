@@ -9,6 +9,8 @@ services:
       - PORT=4444
     ports:
       - "4444:4444"
+    networks:
+      - frontend-network
     depends_on:
       - db
     volumes:
@@ -28,3 +30,7 @@ services:
 
 volumes:
   mysql_data:
+
+networks:
+  frontend-network:
+    driver: bridge
