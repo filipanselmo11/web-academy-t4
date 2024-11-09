@@ -1,6 +1,6 @@
 import { Foto } from "./foto";
 
-export interface Produto {
+export type Produto =  {
   id: string;
   fotos: Foto[];
   nome: string;
