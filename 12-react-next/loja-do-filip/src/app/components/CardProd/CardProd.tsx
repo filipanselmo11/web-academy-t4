@@ -2,6 +2,8 @@
 import React from "react";
 import Image from "next/image";
 import { Produto } from "@/app/types/produto";
+import { useAddFavorito } from "@/app/hooks/useAddFavorito";
+import { toast } from "react-toastify";
 
 export interface CardProps {
     produto: Produto;
@@ -9,6 +11,10 @@ export interface CardProps {
 }
 
 export default function CardProd({ produto, addAoCarrinho }: CardProps) {
+    const { isPending, addFavorito } = useAddFavorito(
+        () => toast.success("Produto favoritado com sucesso"),
+        () => toast.error("Algo deu errado")
+    );
     return (
         <div className="card shadow-sm h-100">
             <Image
@@ -24,6 +30,9 @@ export default function CardProd({ produto, addAoCarrinho }: CardProps) {
                 <p className="card-text text-secondary">R$ {produto.preco}</p>
                 <button className="btn btn-dark d-block w-100" type="button" onClick={() => addAoCarrinho(produto)}>
                     Adicionar no carrinho
+                </button>
+                <button className="btn btn-white d-block w-100" type="button" onClick={() => addFavorito(produto)}>
+                    { isPending ?  "Favoritando": "Favoritar"}
                 </button>
             </div>
         </div>

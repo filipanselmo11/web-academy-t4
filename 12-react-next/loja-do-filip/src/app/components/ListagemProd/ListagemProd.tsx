@@ -16,7 +16,8 @@ export default function ListagemProd({ produtos, addAoCarrinho }: ListagemProdPr
         <div className="col" key={produto.id}>
           <CardProd
             produto={produto}
-            addAoCarrinho={() => addAoCarrinho(produto)}></CardProd>
+            addAoCarrinho={() => addAoCarrinho(produto)}
+          ></CardProd>
         </div>
       ))}
     </div>
