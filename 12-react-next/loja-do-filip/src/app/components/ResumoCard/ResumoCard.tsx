@@ -16,7 +16,7 @@ export default function ResumoCard({ titulo, quantidadeTotal, valorTotal }: Resu
         <h5 className="card-title mb-4 fw-light">{titulo}</h5>
         <p className="card-text fw-medium">Quantidade total: {quantidadeTotal}</p>
         <p className="card-text fw-medium">
-          Valor total: R$ {valorTotal.toFixed(2)}
+          Valor total: R$ {valorTotal}
         </p>
       </div>
     </div>

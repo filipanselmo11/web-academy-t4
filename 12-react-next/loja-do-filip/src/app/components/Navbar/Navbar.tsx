@@ -36,7 +36,7 @@ export default function Navbar({ titulo }: NavbarProps) {
                             </a>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link" href="/#">
+                            <a className="nav-link" href="/favoritos">
                                 Favoritos
                             </a>
                         </li>
