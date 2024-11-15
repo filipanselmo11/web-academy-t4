@@ -6,6 +6,6 @@ export type Produto =  {
   nome: string;
   preco: number;
   descricao: string;
-  vendido: string;
+  vendido: boolean;
   usuario_id: string;
 }

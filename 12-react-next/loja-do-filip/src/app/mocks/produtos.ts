@@ -18,7 +18,7 @@ export const mockProdutos: Produto[] = [
     preco: 2300,
     descricao:
       "Gostaria de enfatizar que o início da atividade geral de formação de atitudes pode nos levar a considerar.",
-    vendido: "false",
+    vendido: false,
     usuario_id: "lobo@origamid.com",
   },
   {
@@ -37,7 +37,7 @@ export const mockProdutos: Produto[] = [
     preco: 2399,
     descricao:
       "Gostaria de enfatizar que o início da atividade geral de formação de atitudes pode nos levar a considerar.",
-    vendido: "false",
+    vendido: false,
     usuario_id: "lobo@origamid.com",
   },
   {
@@ -52,7 +52,7 @@ export const mockProdutos: Produto[] = [
     preco: 2199,
     descricao:
       "Gostaria de enfatizar que o início da atividade geral de formação de atitudes pode nos levar a considerar.",
-    vendido: "false",
+    vendido: false,
     usuario_id: "lobo@origamid.com",
   },
   {
@@ -67,7 +67,7 @@ export const mockProdutos: Produto[] = [
     preco: 1199,
     descricao:
       "Caros amigos, o comprometimento entre as equipes ainda não demonstrou convincentemente.",
-    vendido: "false",
+    vendido: false,
     usuario_id: "lobo@origamid.com",
   },
   {
@@ -82,7 +82,7 @@ export const mockProdutos: Produto[] = [
     preco: 4999,
     descricao:
       "Caros amigos, o comprometimento entre as equipes ainda não demonstrou convincentemente.",
-    vendido: "false",
+    vendido: false,
     usuario_id: "lobo@origamid.com",
   },
   {
@@ -97,7 +97,7 @@ export const mockProdutos: Produto[] = [
     preco: 1899,
     descricao:
       "Gostaria de enfatizar que o início da atividade geral de formação de atitudes pode nos levar a considerar.",
-    vendido: "false",
+    vendido: false,
     usuario_id: "lobo@origamid.com",
   },
   {
@@ -115,7 +115,7 @@ export const mockProdutos: Produto[] = [
     nome: "Smartphone",
     preco: 2333,
     descricao: "Novo smartphone.",
-    vendido: "false",
+    vendido: false,
     usuario_id: "joao@gmail.com",
   },
   {
@@ -133,7 +133,7 @@ export const mockProdutos: Produto[] = [
     nome: "Smartspeaker",
     preco: 1499,
     descricao: "Esse é um speaker novo.",
-    vendido: "false",
+    vendido: false,
     usuario_id: "maria@origamid.com",
   },
   {
@@ -151,7 +151,7 @@ export const mockProdutos: Produto[] = [
     nome: "Notebook",
     preco: 2499.50,
     descricao: "Esse é um notebook novo.",
-    vendido: "false",
+    vendido: false,
     usuario_id: "maria@origamid.com",
   },
 ];
