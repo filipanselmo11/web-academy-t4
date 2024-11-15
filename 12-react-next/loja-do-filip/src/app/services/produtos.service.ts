@@ -8,6 +8,11 @@ export async function getListaProdutos(): Promise<Produto[]> {
   return response.data;
 }
 
+export async function getProduto(nome: string): Promise<Produto> {
+  const response = await api.get(`/produto/${nome}`);
+  return response.data;
+}
+
 export async function addProdutoFavorito(produto: Produto): Promise<Produto> {
   await new Promise((resolve) => setTimeout(resolve, 1000));
   const response = await newAPi.post<Produto>("/favoritos", produto);
