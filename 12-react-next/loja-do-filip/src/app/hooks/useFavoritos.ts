@@ -1,4 +1,5 @@
 import { useQuery } from "@tanstack/react-query";
+import { getFavoritos } from "../services/produtos.service";
 
 export default function useFavoritos() {
   const { data, isPending, isError, refetch } = useQuery({
@@ -7,7 +8,7 @@ export default function useFavoritos() {
   });
 
   return {
-    favoritos: data,
+    favoritos: data || [],
     refetchFavoritos: refetch,
     isPending,
     isError

@@ -4,6 +4,7 @@ import "react-toastify/dist/ReactToastify.css";
 import Navbar from "./components/Navbar/Navbar";
 import BootstrapClient from "./components/BootstrapClient/BootstrapClient";
 import { ReactQueryClientProvider } from "./components/ReactQueryClient/ReactQueryClient";
+import { ToastContainer } from "react-toastify";
 
 export const metadata: Metadata = {
   title: "Loja do Fílip",
@@ -17,6 +18,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
+        <ToastContainer/>
         <ReactQueryClientProvider>
           <Navbar titulo="Loja do Fílip"></Navbar>
           {children}

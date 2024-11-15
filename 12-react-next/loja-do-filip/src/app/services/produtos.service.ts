@@ -14,6 +14,11 @@ export async function addProdutoFavorito(produto: Produto): Promise<Produto> {
   return response.data;
 }
 
+export async function getFavoritos(): Promise<Produto[]> {
+  const response = await newAPi.get("/favoritos");
+  return response.data;
+}
+
 export async function removeFavorito(produto: Produto): Promise<void> {
   const response = await newAPi.delete(`/favoritos/${produto.id}`);
   return response.data;

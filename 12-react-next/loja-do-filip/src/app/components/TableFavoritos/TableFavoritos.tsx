@@ -8,7 +8,7 @@ interface IListagemFavoritosProps {
   refetchFavoritos: () => void;
 }
 
-export default function TableFavoritos({ itensFavoritos, refetchFavoritos }) {
+export default function TableFavoritos({ itensFavoritos, refetchFavoritos }: IListagemFavoritosProps) {
   return (
     <div className="table-responsive">
       <table className="table">
@@ -21,7 +21,8 @@ export default function TableFavoritos({ itensFavoritos, refetchFavoritos }) {
           {itensFavoritos.map((itemFavorito) => (
             <tr key={itemFavorito.id}>
               <ItemFavorito
-                itemFavorito={item}></ItemFavorito>
+                itemFavorito={itemFavorito}
+                refetchFavoritos={refetchFavoritos}></ItemFavorito>
             </tr>
           ))}
         </tbody>
