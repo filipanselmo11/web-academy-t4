@@ -1,6 +1,6 @@
 import { useContext } from "react";
 import CardProduto from "../CardProduto/CardProduto";
-import { FavoritosContext } from "@/app/page";
+import { useFavoritosContext } from "@/app/state/FavoritosProvider/FavoritosProvider";
 
 // interface ResumoFavoritoProps {
 //   favoritos: Produto[];
@@ -9,13 +9,7 @@ import { FavoritosContext } from "@/app/page";
 
 export default function ResumoFavorito() {
 
-  const favoritosContext = useContext(FavoritosContext);
-
-  if (!favoritosContext) {
-    throw new Error("FavoritosContext não foi encontrado. Certifique-se de que o componente está dentro do Provider");
-  }
-
-  const { favoritos } = favoritosContext;
+  const { favoritos } = useFavoritosContext();
 
   return (
     <div className="mt-4">
