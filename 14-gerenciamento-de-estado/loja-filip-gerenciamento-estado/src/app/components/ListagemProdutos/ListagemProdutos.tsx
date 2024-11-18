@@ -1,7 +1,4 @@
-import { useContext } from "react";
 import CardProduto from "../CardProduto/CardProduto";
-import ResumoFavorito from "../ResumoFavoritos/ResumoFavoritos";
-
 
 interface ListagemProdutoProps {
   produtos: Produto[];
@@ -24,7 +21,6 @@ export default function ListagemProdutos({
           />
         ))}
       </div>
-      <ResumoFavorito/>
     </>
   );
 }

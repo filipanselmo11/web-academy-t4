@@ -1,29 +1,20 @@
-import { useContext } from "react";
-import CardProduto from "../CardProduto/CardProduto";
-import { useFavoritosContext } from "@/app/state/FavoritosProvider/FavoritosProvider";
+"use client";
 
-// interface ResumoFavoritoProps {
-//   favoritos: Produto[];
-//   setFavoritos: React.Dispatch<React.SetStateAction<Produto[]>>;
-// };
+import ListagemFavoritos from "../ListagemFavoritos/ListagemFavoritos";
 
-export default function ResumoFavorito() {
+interface ResumoFavoritoProps {
+  produtos: Produto[];
+}
 
-  const { favoritos } = useFavoritosContext();
-
+export default function ResumoFavorito({ produtos }: ResumoFavoritoProps) {
   return (
     <div className="mt-4">
-      <h5 className="mb-4">
-        Seus produtos favoritos:
-      </h5>
-      <div className="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-3">
-        {favoritos.map((produto) => (
-          <CardProduto
-            key={produto.id}
-            produto={produto}
-          />
-        ))}
-      </div>
+      <h5 className="mb-4">Seus produtos favoritos:</h5>
+      {produtos.length > 0 ? (
+        <ListagemFavoritos itensFavoritos={produtos} />
+      ) : (
+        <p>Nenhum produto foi favoritado.</p>
+      )}
     </div>
   );
 }

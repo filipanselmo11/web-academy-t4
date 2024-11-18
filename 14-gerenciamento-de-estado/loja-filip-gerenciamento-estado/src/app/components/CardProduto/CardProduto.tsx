@@ -1,4 +1,4 @@
-
+"use client";
 import { useFavoritosContext } from "@/app/state/FavoritosProvider/FavoritosProvider";
 import Image from "next/image";
 
@@ -11,14 +11,14 @@ export default function CardProduto({
 }: CardProdutoProps) {
 
 
-  const { favoritos, setFavoritos } = useFavoritosContext();
+  const { verificarFavorito, setFavoritos } = useFavoritosContext();
 
-  const adicionarAosFavoritos = (produto: Produto) => {
+  const adicionarAosFavoritos = () => {
 
-    setFavoritos((favoritos) => [...favoritos, produto]);
+    setFavoritos((prevFavoritos) => [...prevFavoritos, produto]);
   };
 
-  const ehFavorito = favoritos.some((item) => item.id === produto.id);
+  const ehFavorito = verificarFavorito(produto.id);
 
   return (
     <div className="col">
@@ -40,7 +40,7 @@ export default function CardProduto({
           <button
             className="btn btn-success d-block w-100"
             type="button"
-            onClick={() => adicionarAosFavoritos(produto)}
+            onClick={adicionarAosFavoritos}
             disabled={ehFavorito}>
                 {ehFavorito ? "Adicionado": "Adicionar aos favoritos"}
             </button>

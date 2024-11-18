@@ -1,19 +1,18 @@
+"use client";
+import { useFavoritosContext } from "@/app/state/FavoritosProvider/FavoritosProvider";
 
 interface ItemfavoritosProps {
   itemFavorito: Produto;
-  setFavoritos: React.Dispatch<React.SetStateAction<Produto[]>>;
 };
 
 export default function ItemFavorito({
   itemFavorito,
-  setFavoritos
 }: ItemfavoritosProps) {
-  const removerFavorito = (id: string) => {
-    setFavoritos((favoritos) => favoritos.filter((item) => item.id !== id));
-  };
+
+  const { removerFavorito } = useFavoritosContext();
 
   return (
-    <tr key={itemFavorito.id}>
+    <>
       <td>
         {itemFavorito.nome}
       </td>
@@ -22,11 +21,12 @@ export default function ItemFavorito({
       </td>
       <td>
         <button
+          type="button"
           onClick={() => removerFavorito(itemFavorito.id)}
           className="btn btn-danger btn-sm">
           Remover
         </button>
       </td>
-    </tr>
+    </>
   );
 }

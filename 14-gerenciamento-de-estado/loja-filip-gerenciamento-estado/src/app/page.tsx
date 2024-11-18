@@ -9,9 +9,7 @@ export default function App() {
   return (
     <main>
       <div className="container p-5">
-        <FavoritosProvider>
-          <ListagemProdutos produtos={produtos} />
-        </FavoritosProvider>
+        <ListagemProdutos produtos={produtos} />
       </div>
     </main>
   );
