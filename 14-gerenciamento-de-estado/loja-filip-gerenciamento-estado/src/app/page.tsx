@@ -2,7 +2,6 @@
 
 import { mockProdutos } from "./mocks/produtos";
 import ListagemProdutos from "./components/ListagemProdutos/ListagemProdutos";
-import { FavoritosProvider } from "./state/FavoritosProvider/FavoritosProvider";
 export default function App() {
   const produtos = mockProdutos;
 
