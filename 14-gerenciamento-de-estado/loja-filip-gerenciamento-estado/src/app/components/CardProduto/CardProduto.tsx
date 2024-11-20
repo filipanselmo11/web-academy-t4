@@ -1,52 +1,70 @@
-"use client";
-import { useFavoritosContext } from "@/app/state/FavoritosProvider/FavoritosProvider";
+import { calculaValorComPorcentagemDeDesconto } from "@/app/helpers";
 import Image from "next/image";
 
 interface CardProdutoProps {
   produto: Produto;
-};
+  favoritos: Produto[];
+  setFavoritos: React.Dispatch<React.SetStateAction<Produto[]>>;
+  mostrarImagem?: boolean;
+  mostrarBotao?: boolean;
+}
 
 export default function CardProduto({
   produto,
+  favoritos,
+  setFavoritos,
+  mostrarImagem = true,
+  mostrarBotao = true,
 }: CardProdutoProps) {
-
-
-  const { verificarFavorito, setFavoritos } = useFavoritosContext();
-
-  const adicionarAosFavoritos = () => {
-
-    setFavoritos((prevFavoritos) => [...prevFavoritos, produto]);
+  const adicionarAosFavoritos = (produto: Produto) => {
+    setFavoritos((favoritos) => [...favoritos, produto]);
   };
 
-  const ehFavorito = verificarFavorito(produto.id);
+  const ehFavorito = favoritos.some((item) => item.id === produto.id);
 
   return (
     <div className="col">
       <div className="card shadow-sm h-100">
-        <Image
-          src={produto.fotos[0].src}
-          className="card-img-top"
-          alt={produto.fotos[0].titulo}
-          width={300}
-          height={320}
-        />
-        <div className="card-body bg-light">
-          <h5 className="card-title">
-            {produto.nome}
+        {mostrarImagem ? (
+          <Image
+            src={produto.fotos[0].src}
+            className="card-img-top"
+            alt={produto.fotos[0].titulo}
+            width={150}
+            height={180}
+          />
+        ) : null}
+
+        <div className="card-body bg-ligth">
+          <span className="badge text-bg-success text-white mb-2 ">
+            {produto.desconto}% de desconto
+          </span>
+
+          <h5 className="card-title fw-bold">{produto.nome}</h5>
+          <span className="text-secondary">De R$ {produto.preco}</span>
+          <h5 className="card-text">
+            Por R${" "}
+            {calculaValorComPorcentagemDeDesconto(
+              Number(produto.preco),
+              produto.desconto
+            )}
           </h5>
-          <p className="card-text text-secondary">
-            R$ {produto.preco}
-          </p>
-          <button
-            className="btn btn-success d-block w-100"
-            type="button"
-            onClick={adicionarAosFavoritos}
-            disabled={ehFavorito}>
-                {ehFavorito ? "Adicionado": "Adicionar aos favoritos"}
+          {mostrarBotao ? (
+            <button
+              className={
+                ehFavorito
+                  ? "btn btn-success d-block w-100"
+                  : "btn btn-secondary d-block w-100"
+              }
+              type="button"
+              onClick={() => adicionarAosFavoritos(produto)}
+              disabled={ehFavorito}
+            >
+              {ehFavorito ? "Favoritado" : "Favoritar"}
             </button>
+          ) : null}
         </div>
       </div>
     </div>
   );
-
 }

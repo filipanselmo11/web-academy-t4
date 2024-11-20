@@ -8,6 +8,7 @@ interface Produto {
   fotos: Foto[];
   nome: string;
   preco: number;
+  desconto: number;
   descricao: string;
   vendido: boolean;
   usuario_id: string;
