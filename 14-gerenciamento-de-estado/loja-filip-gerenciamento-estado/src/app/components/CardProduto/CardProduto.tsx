@@ -1,28 +1,19 @@
 "use client";
 import { calculaValorComPorcentagemDeDesconto } from "@/app/helpers";
-import { FavoritosContext } from "@/app/page";
+import { useFavoritosContext } from "@/app/state/FavoritosProvider/FavoritosProvider";
 import Image from "next/image";
-import { useContext } from "react";
 
 interface CardProdutoProps {
   produto: Produto;
 }
 
 export default function CardProduto({ produto }: CardProdutoProps) {
+  const favoritosContext = useFavoritosContext();
 
-  const favoritosContext = useContext(FavoritosContext);
-
-  if (!favoritosContext) {
-    throw new Error("FavoritosContext não foi encontrado. Certifique-se de que o componente está dentro do Provider");
-  }
-
-  const {
-    favoritos,
-    setFavoritos
-  } = favoritosContext;
+  const { favoritos, setFavoritos } = favoritosContext;
 
   const adicionarAosFavoritos = (produto: Produto) => {
-    setFavoritos((favoritos) => [...favoritos, produto])
+    setFavoritos((favoritos) => [...favoritos, produto]);
   };
 
   const ehFavorito = favoritos.some((item) => item.id === produto.id);
