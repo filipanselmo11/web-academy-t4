@@ -1,8 +1,11 @@
 "use client";
 
-// import ResumoFavorito from "../components/ResumoFavoritos/ResumoFavoritos";
+import ResumoFavorito from "../components/ResumoFavoritos/ResumoFavoritos";
+import { useFavoritosContext } from "../state/FavoritosProvider/FavoritosProvider";
 
 export default function Favoritos() {
+
+  const { favoritos } = useFavoritosContext();
 
   return (
     <main>
@@ -10,7 +13,7 @@ export default function Favoritos() {
           <h2>
             Favoritos Page
           </h2>
-          {/* <ResumoFavorito produtos={favoritos} /> */}
+          <ResumoFavorito produtos={favoritos} />
         </div>
     </main>
   );
