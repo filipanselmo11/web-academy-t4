@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Navbar from "./components/Navbar/Navbar";
 import BootstrapClient from "./components/BootstrapClient";
-import { FavoritosProvider } from "./state/FavoritosProvider/FavoritosProvider";
+// import { FavoritosProvider } from "./state/FavoritosProvider/FavoritosProvider";
 
 export const metadata: Metadata = {
   title: "Loja do Fílip Gerenciamento de Estado",
@@ -16,11 +16,11 @@ export default function RootLayout({
   return (
     <html lang="pt-br">
       <body>
-        <FavoritosProvider>
+        {/* <FavoritosProvider> */}
           <Navbar />
           {children}
           <BootstrapClient />
-        </FavoritosProvider>
+        {/* </FavoritosProvider> */}
       </body>
     </html>
   );
