@@ -4,7 +4,7 @@ import Link from "next/link";
 
 import { SubmitHandler, useForm } from "react-hook-form";
 
-interface Inputs  {
+type Inputs = {
   nome: string;
   email: string;
   emailConfirmar: string;

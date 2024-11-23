@@ -1,18 +1,14 @@
+"use client";
 import { calculaValorComPorcentagemDeDesconto } from "@/app/helpers";
+import { useFavoritosContext } from "@/app/state/FavoritosProvider/FavoritosProvider";
 import Image from "next/image";
 
 interface IItemFavoritoProps {
   itemFavorito: Produto;
-  setFavoritos: React.Dispatch<React.SetStateAction<Produto[]>>;
 }
 
-export default function ItemFavorito({
-  itemFavorito,
-  setFavoritos,
-}: IItemFavoritoProps) {
-  const removerFavorito = (id: string) => {
-    setFavoritos((favoritos) => favoritos.filter((item) => item.id !== id));
-  };
+export default function ItemFavorito({ itemFavorito }: ItemfavoritosProps) {
+  const { removerFavorito } = useFavoritosContext();
 
   return (
     <tr key={itemFavorito.id}>
@@ -25,17 +21,21 @@ export default function ItemFavorito({
           height={50}
         />
         <div className="d-flex flex-column ms-2">
-          <span className="">{itemFavorito.nome}</span>
-          <small className="text-muted">{itemFavorito.descricao}</small>
+          <span>
+            {itemFavorito.nome}
+          </span>
+          <small className="text-muted">
+            {itemFavorito.descricao}
+          </small>
         </div>
       </td>
 
       <td>
         R${" "}
-        {calculaValorComPorcentagemDeDesconto(
-          Number(itemFavorito.preco),
-          itemFavorito.desconto
-        ).toFixed(2)}
+        {calculaValorComPorcentagemDeDesconto(itemFavorito.preco, itemFavorito.desconto).toFixed(2)}
+      </td>
+      <td>
+        {itemFavorito.desconto}%
       </td>
 
       <td>{itemFavorito.desconto}%</td>
@@ -43,11 +43,26 @@ export default function ItemFavorito({
       <td>
         <button
           onClick={() => removerFavorito(itemFavorito.id)}
-          className="btn btn-outline-danger btn-sm"
-        >
+          className="btn btn-outline-danger btn-sm">
           Remover
         </button>
       </td>
     </tr>
+    // <>
+    //   <td>
+    //     {itemFavorito.nome}
+    //   </td>
+    //   <td>
+    //     R$ {itemFavorito.preco.toFixed(2)}
+    //   </td>
+    //   <td>
+    //     <button
+    //       type="button"
+    //       onClick={() => removerFavorito(itemFavorito.id)}
+    //       className="btn btn-danger btn-sm">
+    //       Remover
+    //     </button>
+    //   </td>
+    // </>
   );
 }

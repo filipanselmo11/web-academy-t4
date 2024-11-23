@@ -1,12 +1,12 @@
 "use client";
 
-import { SubmitHandler, useForm } from "react-hook-form";
 import Link from "next/link";
+import { SubmitHandler, useForm } from "react-hook-form";
 
-interface Inputs {
+type Inputs = {
   email: string;
   senha: string;
-}
+};
 
 export default function FormLogin() {
   const {
