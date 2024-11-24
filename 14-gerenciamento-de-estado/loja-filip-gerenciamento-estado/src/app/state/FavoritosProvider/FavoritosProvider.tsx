@@ -5,13 +5,11 @@ import { createContext, useContext, useState } from "react";
 interface IFavoritosContext {
   favoritos: Produto[];
   setFavoritos: React.Dispatch<React.SetStateAction<Produto[]>>;
-  removerFavorito: (id: string) => void;
 }
 
 export const FavoritosContext = createContext<IFavoritosContext>({
   favoritos: [],
   setFavoritos: () => {},
-  removerFavorito: () => {},
 });
 
 export const FavoritosProvider = ({
@@ -29,8 +27,7 @@ export const FavoritosProvider = ({
     <FavoritosContext.Provider
       value={{
         favoritos,
-        setFavoritos,
-        removerFavorito
+        setFavoritos
       }}
     >
       {children}
