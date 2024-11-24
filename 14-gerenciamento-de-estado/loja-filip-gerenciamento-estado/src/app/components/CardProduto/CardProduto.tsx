@@ -1,7 +1,6 @@
 "use client";
 import { calculaValorComPorcentagemDeDesconto } from "@/app/helpers";
 import { useAddFavoritos } from "@/app/hooks/useAddFavoritos";
-import { useFavoritosContext } from "@/app/hooks/useFavoritosContext";
 import { useVerificarFavorito } from "@/app/hooks/useVerificarFavorito";
 import Image from "next/image";
 

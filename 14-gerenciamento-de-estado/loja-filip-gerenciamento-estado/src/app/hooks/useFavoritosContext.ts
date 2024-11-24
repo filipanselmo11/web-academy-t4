@@ -1,7 +1,6 @@
 import { useContext } from "react";
 import { FavoritosContext } from "../state/FavoritosProvider/FavoritosProvider";
 
-
 export function useFavoritosContext() {
   const favoritosContext = useContext(FavoritosContext);
 

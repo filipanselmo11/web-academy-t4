@@ -1,6 +1,5 @@
 import { useFavoritosContext } from "./useFavoritosContext";
 
-
 export function useAddFavoritos() {
 
   const { setFavoritos } = useFavoritosContext();
