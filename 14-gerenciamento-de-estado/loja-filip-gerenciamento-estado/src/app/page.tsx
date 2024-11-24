@@ -1,11 +1,11 @@
+
 "use client";
 
-import { useState } from "react";
+import { mockProdutos } from "./mocks/produtos";
 import ListagemProdutos from "./components/ListagemProdutos/ListagemProdutos";
 
 export default function App() {
   const produtos = mockProdutos;
-  const [favoritos, setFavoritos] = useState<Produto[]>([]);
 
   return (
     <main>

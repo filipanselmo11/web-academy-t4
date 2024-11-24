@@ -1,6 +1,6 @@
 "use client";
 import { calculaValorComPorcentagemDeDesconto } from "@/app/helpers";
-import { useFavoritosContext } from "@/app/state/FavoritosProvider/FavoritosProvider";
+import { useFavoritosContext } from "@/app/hooks/useFavoritosContext";
 import Image from "next/image";
 
 interface CardProdutoProps {

@@ -1,9 +1,9 @@
 "use client";
 import { calculaValorComPorcentagemDeDesconto } from "@/app/helpers";
-import { useFavoritosContext } from "@/app/state/FavoritosProvider/FavoritosProvider";
+import { useFavoritosContext } from "@/app/hooks/useFavoritosContext";
 import Image from "next/image";
 
-interface IItemFavoritoProps {
+interface ItemfavoritosProps {
   itemFavorito: Produto;
 }
 
@@ -29,7 +29,6 @@ export default function ItemFavorito({ itemFavorito }: ItemfavoritosProps) {
           </small>
         </div>
       </td>
-
       <td>
         R${" "}
         {calculaValorComPorcentagemDeDesconto(itemFavorito.preco, itemFavorito.desconto).toFixed(2)}
@@ -37,9 +36,6 @@ export default function ItemFavorito({ itemFavorito }: ItemfavoritosProps) {
       <td>
         {itemFavorito.desconto}%
       </td>
-
-      <td>{itemFavorito.desconto}%</td>
-
       <td>
         <button
           onClick={() => removerFavorito(itemFavorito.id)}

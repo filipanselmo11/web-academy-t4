@@ -3,13 +3,11 @@ import { calculaValorComPorcentagemDeDesconto } from "@/app/helpers";
 import ItemFavorito from "../ItemFavorito/ItemFavorito";
 
 interface IListagemFavoritosProps {
-  produtosFavoritos: Produto[];
-  setFavoritos: React.Dispatch<React.SetStateAction<Produto[]>>;
+  itensFavoritos: Produto[];
 }
 
 export default function ListagemFavoritos({
-  produtosFavoritos,
-  setFavoritos,
+  itensFavoritos,
 }: IListagemFavoritosProps) {
 
   const valorTotalFavoritos = itensFavoritos.reduce((acc, produto) => {

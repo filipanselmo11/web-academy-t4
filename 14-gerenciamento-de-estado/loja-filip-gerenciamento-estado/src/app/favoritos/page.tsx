@@ -1,9 +1,7 @@
 "use client";
-import ListagemFavoritos from "../components/ListagemFavoritos/ListagemFavoritos";
-import { useState } from "react";
 
 import ResumoFavorito from "../components/ResumoFavoritos/ResumoFavoritos";
-import { useFavoritosContext } from "../state/FavoritosProvider/FavoritosProvider";
+import { useFavoritosContext } from "../hooks/useFavoritosContext";
 
 export default function Favoritos() {
 
@@ -12,9 +10,6 @@ export default function Favoritos() {
   return (
     <main>
         <div className="container p-5">
-          <h2>
-            Favoritos Page
-          </h2>
           <ResumoFavorito produtos={favoritos} />
         </div>
     </main>
