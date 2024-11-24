@@ -1,6 +1,6 @@
 "use client";
 
-import { createContext, useContext, useState } from "react";
+import { createContext, useState } from "react";
 
 interface IFavoritosContext {
   favoritos: Produto[];
@@ -18,10 +18,6 @@ export const FavoritosProvider = ({
   children: React.ReactNode;
 }) => {
   const [favoritos, setFavoritos] = useState<Produto[]>([]);
-
-  const removerFavorito = (id: string) => {
-    setFavoritos((prevFavoritos) => prevFavoritos.filter((item) => item.id !== id));
-  };
 
   return (
     <FavoritosContext.Provider

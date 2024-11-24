@@ -1,5 +1,6 @@
 "use client";
 import { calculaValorComPorcentagemDeDesconto } from "@/app/helpers";
+import { useAddFavoritos } from "@/app/hooks/useAddFavoritos";
 import { useFavoritosContext } from "@/app/hooks/useFavoritosContext";
 import { useVerificarFavorito } from "@/app/hooks/useVerificarFavorito";
 import Image from "next/image";
@@ -10,15 +11,9 @@ interface CardProdutoProps {
 
 export default function CardProduto({ produto }: CardProdutoProps) {
 
-  const { setFavoritos } = useFavoritosContext();
-
   const verificarFavorito = useVerificarFavorito();
 
-  const adicionarAosFavoritos = (produto: Produto) => {
-    setFavoritos((favoritos) => [...favoritos, produto]);
-  };
-
-  const ehFavorito = verificarFavorito(produto.id);
+  const adicionarAosFavoritos = useAddFavoritos();
 
   const mostrarImagem = true;
   const mostrarBotao = true;
@@ -55,9 +50,9 @@ export default function CardProduto({ produto }: CardProdutoProps) {
               className="btn btn-success d-block w-100"
               type="button"
               onClick={() => adicionarAosFavoritos(produto)}
-              disabled={ehFavorito}
+              disabled={verificarFavorito(produto.id)}
             >
-              {ehFavorito ? "Adicionado" : "Adicionar aos favoritos"}
+              {verificarFavorito(produto.id) ? "Adicionado" : "Adicionar aos favoritos"}
             </button>
           ) : null}
         </div>
