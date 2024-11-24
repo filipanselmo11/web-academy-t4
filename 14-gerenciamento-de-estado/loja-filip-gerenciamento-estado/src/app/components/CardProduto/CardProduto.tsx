@@ -1,6 +1,7 @@
 "use client";
 import { calculaValorComPorcentagemDeDesconto } from "@/app/helpers";
 import { useFavoritosContext } from "@/app/hooks/useFavoritosContext";
+import { useVerificarFavorito } from "@/app/hooks/useVerificarFavorito";
 import Image from "next/image";
 
 interface CardProdutoProps {
@@ -8,15 +9,16 @@ interface CardProdutoProps {
 }
 
 export default function CardProduto({ produto }: CardProdutoProps) {
-  const favoritosContext = useFavoritosContext();
 
-  const { favoritos, setFavoritos } = favoritosContext;
+  const { setFavoritos } = useFavoritosContext();
+
+  const verificarFavorito = useVerificarFavorito();
 
   const adicionarAosFavoritos = (produto: Produto) => {
     setFavoritos((favoritos) => [...favoritos, produto]);
   };
 
-  const ehFavorito = favoritos.some((item) => item.id === produto.id);
+  const ehFavorito = verificarFavorito(produto.id);
 
   const mostrarImagem = true;
   const mostrarBotao = true;
