@@ -1,8 +1,10 @@
 "use client";
 
 import Link from "next/link";
+import { useContext } from "react";
 
 import { SubmitHandler, useForm } from "react-hook-form";
+import { AuthContext } from "../state/AuthProvider/AuthProvider";
 
 type Inputs = {
   nome: string;
@@ -12,13 +14,27 @@ type Inputs = {
 };
 
 export default function Cadastro() {
+  const authContext = useContext(AuthContext);
+
+  if (!authContext) {
+    throw new Error("AuthContext deve ser usado dentro de um AuthProvider");
+  }
+
+  const { login } = authContext;
+
   const {
     register,
     handleSubmit,
     formState: { errors },
   } = useForm<Inputs>();
 
-  const onSubmit: SubmitHandler<Inputs> = (data) => {};
+  const onSubmit: SubmitHandler<Inputs> = (data) => {
+    if (data.email === data.emailConfirmar) {
+      login(data.email);
+    } else {
+      alert("Os emails não coincidem");
+    }
+  };
 
   return (
     <main>

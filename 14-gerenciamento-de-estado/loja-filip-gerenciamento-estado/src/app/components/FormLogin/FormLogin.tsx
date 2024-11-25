@@ -1,6 +1,8 @@
 "use client";
 
+import { AuthContext } from "@/app/state/AuthProvider/AuthProvider";
 import Link from "next/link";
+import { useContext } from "react";
 import { SubmitHandler, useForm } from "react-hook-form";
 
 type Inputs = {
@@ -9,13 +11,17 @@ type Inputs = {
 };
 
 export default function FormLogin() {
+  const { login } = useContext(AuthContext);
+
   const {
     register,
     handleSubmit,
     formState: { errors },
   } = useForm<Inputs>();
 
-  const onSubmit: SubmitHandler<Inputs> = (data) => {};
+  const onSubmit: SubmitHandler<Inputs> = (data) => {
+    login(data.email);
+  };
 
   return (
     <div className="col-12 col-md-8 d-flex justify-content-center align-items-center">
@@ -48,9 +54,8 @@ export default function FormLogin() {
           {errors.senha?.type === "required" && (
             <span className="text-danger">Esse campo é obrigatório</span>
           )}
-
           {errors.senha?.type === "minLength" && (
-            <span className="text-danger">Minímo de 6 (seis) caracteres </span>
+            <span className="text-danger">Mínimo de 6 (seis) caracteres</span>
           )}
         </div>
 
@@ -62,7 +67,7 @@ export default function FormLogin() {
 
         <div className="text-center mt-3">
           <Link href="/cadastro" className="btn btn-link">
-            não tenho cadastro
+            Não tenho cadastro
           </Link>
         </div>
       </form>

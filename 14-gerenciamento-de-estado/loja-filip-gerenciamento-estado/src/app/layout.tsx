@@ -1,26 +1,33 @@
-import type { Metadata } from "next";
+"use client";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Navbar from "./components/Navbar/Navbar";
 import BootstrapClient from "./components/BootstrapClient";
 import { FavoritosProvider } from "./state/FavoritosProvider/FavoritosProvider";
+import { AuthProvider } from "./state/AuthProvider/AuthProvider";
+import { usePathname } from "next/navigation";
 
-export const metadata: Metadata = {
-  title: "Loja do Fílip Gerenciamento de Estado",
-};
 
 export default function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+
+  const pathname = usePathname();
+
+  const isLoginCadastro = pathname === "/login" || pathname === "/cadastro";
+
   return (
     <html lang="pt-br">
       <body>
-        <FavoritosProvider>
-          <Navbar />
-          {children}
-          <BootstrapClient />
-        </FavoritosProvider>
+        <AuthProvider>
+          <FavoritosProvider>
+            {/* <Navbar /> */}
+            {!isLoginCadastro && <Navbar/>}
+            {children}
+            <BootstrapClient />
+          </FavoritosProvider>
+        </AuthProvider>
       </body>
     </html>
   );
