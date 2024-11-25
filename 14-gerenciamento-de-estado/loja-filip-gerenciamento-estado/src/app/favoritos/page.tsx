@@ -1,7 +1,7 @@
 "use client";
 
 import ResumoFavorito from "../components/ResumoFavoritos/ResumoFavoritos";
-import { useFavoritosContext } from "../hooks/useFavoritosContext";
+import { useFavoritosContext } from "../state/FavoritosProvider/FavoritosProvider";
 
 export default function Favoritos() {
 

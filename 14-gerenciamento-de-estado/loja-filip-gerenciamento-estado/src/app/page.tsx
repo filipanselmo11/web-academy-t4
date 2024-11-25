@@ -23,8 +23,7 @@ export default function App() {
     if (!userEmail) {
       router.push("/login");
     }
-  }, [userEmail, router])
-
+  }, [userEmail, router]);
 
   return (
     <main>

@@ -1,7 +1,7 @@
 "use client";
 import { calculaValorComPorcentagemDeDesconto } from "@/app/helpers";
-import { useAddFavoritos } from "@/app/hooks/useAddFavoritos";
-import { useVerificarFavorito } from "@/app/hooks/useVerificarFavorito";
+import { useFavoritosContext } from "@/app/state/FavoritosProvider/FavoritosProvider";
+
 import Image from "next/image";
 
 interface CardProdutoProps {
@@ -10,9 +10,15 @@ interface CardProdutoProps {
 
 export default function CardProduto({ produto }: CardProdutoProps) {
 
-  const verificarFavorito = useVerificarFavorito();
+  const { addFavorito, verificarFavorito, isAddingFavorito} = useFavoritosContext();
 
-  const adicionarAosFavoritos = useAddFavoritos();
+  const handleAddFavorito = (produto: Produto) => {
+    if (!verificarFavorito(produto.id)) {
+      addFavorito(produto);
+    } else {
+      console.log("Produto já está nos favoritos");
+    }
+  };
 
   const mostrarImagem = true;
   const mostrarBotao = true;
@@ -48,10 +54,10 @@ export default function CardProduto({ produto }: CardProdutoProps) {
             <button
               className="btn btn-success d-block w-100"
               type="button"
-              onClick={() => adicionarAosFavoritos(produto)}
-              disabled={verificarFavorito(produto.id)}
+              onClick={() => handleAddFavorito(produto)}
+              disabled={isAddingFavorito}
             >
-              {verificarFavorito(produto.id) ? "Adicionado" : "Adicionar aos favoritos"}
+              {isAddingFavorito ? "Adicionando..." : "Adicionar aos favoritos"}
             </button>
           ) : null}
         </div>

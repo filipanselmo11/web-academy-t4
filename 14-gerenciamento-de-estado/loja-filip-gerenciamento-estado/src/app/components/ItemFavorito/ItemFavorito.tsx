@@ -1,6 +1,6 @@
 "use client";
 import { calculaValorComPorcentagemDeDesconto } from "@/app/helpers";
-import { useRemoverFavorito } from "@/app/hooks/useRemoverFavorito";
+import { useFavoritosContext } from "@/app/state/FavoritosProvider/FavoritosProvider";
 import Image from "next/image";
 
 interface ItemfavoritosProps {
@@ -9,7 +9,15 @@ interface ItemfavoritosProps {
 
 export default function ItemFavorito({ itemFavorito }: ItemfavoritosProps) {
 
-  const removerFavorito = useRemoverFavorito();
+  const { rmFavorito, verificarFavorito, isRemovingFavorito } = useFavoritosContext();
+
+  const handleRmFavorito = (produto: Produto) => {
+    if (verificarFavorito(produto.id)) {
+      rmFavorito(produto);
+    } else {
+      console.log("Produto não está nos favoritos");
+    }
+  };
 
   return (
     <tr key={itemFavorito.id}>
@@ -39,9 +47,10 @@ export default function ItemFavorito({ itemFavorito }: ItemfavoritosProps) {
       </td>
       <td>
         <button
-          onClick={() => removerFavorito(itemFavorito.id)}
-          className="btn btn-outline-danger btn-sm">
-          Remover
+          onClick={() => handleRmFavorito(itemFavorito)}
+          className="btn btn-outline-danger btn-sm"
+          disabled={isRemovingFavorito}>
+            {isRemovingFavorito ? "Removendo..." : "Remover"}
         </button>
       </td>
     </tr>

@@ -1,6 +1,5 @@
 "use client";
-
-import { useCalcularValorTotalFavoritos } from "@/app/hooks/useCalcularTotalFavoritos";
+import { useFavoritosContext } from "@/app/state/FavoritosProvider/FavoritosProvider";
 import ItemFavorito from "../ItemFavorito/ItemFavorito";
 
 interface IListagemFavoritosProps {
@@ -11,7 +10,7 @@ export default function ListagemFavoritos({
   itensFavoritos,
 }: IListagemFavoritosProps) {
 
-  const valorTotalFavoritos = useCalcularValorTotalFavoritos();
+  const { valorTotalFavoritos } = useFavoritosContext();
 
   return (
     <div className="card mb-4">
