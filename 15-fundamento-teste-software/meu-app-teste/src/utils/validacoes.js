@@ -1,10 +1,9 @@
 
 
 function primeiroNome(nomeCompleto) {
-  const espacoEmBranco = nomeCompleto.lastIndexOf(" ");
-
-  if (espacoEmBranco === -1) return nomeCompleto;
-  else return nomeCompleto.splice(0, espacoEmBranco);
+  const nomeSemEspaco = nomeCompleto.trim();
+  const palavras = nomeSemEspaco.split(" ");
+  return palavras[0];
 }
 
 function verificarDisponibilidadeEstoque(tipoProduto, quantidade) {
@@ -17,14 +16,16 @@ function verificarDisponibilidadeEstoque(tipoProduto, quantidade) {
   };
 
   const estoqueDisponivel = estoque[tipoProduto];
-  if (estoqueDisponivel === 0) return false;
-  else return true;
+  if (estoqueDisponivel !== undefined) {
+    return estoqueDisponivel >= quantidade;
+  }
+  return false;
 }
 
 function calcularPrecoTotal(produtos) {
   let total = 0;
   for (let i = 0; i < produtos.length; i++) {
-    total = produtos[i].price;
+    total += produtos[i].price;
   }
 
   return total;
